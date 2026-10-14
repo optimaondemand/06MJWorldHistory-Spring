@@ -1,0 +1,19 @@
+/* Optima gloss/hover/audio component - reference copy.
+   This file is not linked by pages (each page inlines its own <style> block
+   for self-containment), but is kept here as the canonical source to copy from
+   when building or updating a page. Keep this file and every page's inline
+   copy in sync by hand. */
+.gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+.gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+.gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+.gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+.gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+.gloss-audio:hover { color: #0E1C42; }
+.figure-card, .map-card, .people-card, .city-card, .tech-card {
+  background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0;
+}
+.figure-card img, .map-card img, .people-card img, .city-card img, .tech-card img {
+  max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0;
+}
+.callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+.img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
