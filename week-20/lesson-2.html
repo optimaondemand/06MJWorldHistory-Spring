@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 20.2</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 3 &middot; Module 20</div>
+        <div style="font-size: 12px; color: #666;">Athens: From Aristocrats to Democracy</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 20.2 &middot; Wednesday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Cleisthenes Invents Democracy</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 20.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Cleisthenes Invents Democracy</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">aristocracy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'air ih STOK ruh see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">air-ih-STOK-ruh-see</span>Rule by a small group of rich families whose power passes from parent to child.</span></span></li>
+            <li><span class="gloss" tabindex="0">council<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOWN sul')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOWN-sul</span>A group chosen to plan and manage a government's daily work.</span></span></li>
+            <li><span class="gloss" tabindex="0">exile<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EG zyle')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EG-zyle</span>Being forced to live away from your homeland.</span></span></li>
+            <li><span class="gloss" tabindex="0">tribe<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'tribe')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tribe</span>A large group of citizens in one civic division. In Athens, a tribe was a set of local districts.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; MAIN MAP &middot; Athens and Attica</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg/1280px-Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg" alt="Black and white relief map of Greece and the Aegean Sea with Athens, Piraeus, Megara, and Sparta labeled" />
+        <div class="img-credit">Map by GreekMaps, Wikimedia Commons, CC BY 4.0.</div>
+        <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">Athens sits near the coast, with the harbor of Piraeus close by. Sparta lies far to the south.</p>
+        <div style="margin-top: 12px; font-size: 13px; color: #444;"><strong>Geographical Glossary:</strong> <strong>Athens</strong> (ATH-inz): the chief city of Attica. <strong>Piraeus</strong> (py-REE-us): the harbor town of Athens. <strong>Sparta</strong> (SPAR-tuh): the military city of Laconia.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How did Athens turn the rule of a tyrant into the rule of its people?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After the tyrants, Athens tried something new. Today you will see how one reformer built a government where citizens, not families, held the power, and who was still left out.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the tyranny of Peisistratus's family ended.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the reforms of Cleisthenes.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what democracy meant in Athens.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell who was left out of Athenian democracy.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page and the main map above.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The End of the Tyrants</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After Peisistratus died in 527 BC, his son <span class="gloss" tabindex="0"><strong>Hippias</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HIP ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HIP-ee-us</span>The son of Peisistratus who ruled Athens until 510 BC.</span></span> (<em>Hippias</em>) ruled Athens. At first things went on much as before. Then, in 514 BC, two men killed Hippias's brother. Hippias grew harsh and fearful. He began to punish Athenians he did not trust, and many fled. Those who had fled began to plan a return.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">These exiles found an unlikely helper. The priestess at Delphi, the holy place of the god Apollo, kept telling Spartan visitors to set Athens free. Sparta listened. A Spartan army marched to Athens, and in 510 BC Hippias was driven out. Notice the irony. Sparta had helped free Athens, but it was also helping to make a rival. This is a good example of how events can have results no one planned.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>tyrant</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TY runt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TY-runt</span>In Greece, a man who took power by force. He was not always cruel.</span></span> (<em>tyrannos</em>), said TY-runt: In Greece, a man who took power by force. He was not always cruel.</li>
+            <li><span class="gloss" tabindex="0"><strong>laborers</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'THEE teez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">THEE-teez</span>The poorest Athenian citizens, who worked for hire.</span></span> (<em>thetes</em>), said THEE-teez: The poorest Athenian citizens, who worked for hire.</li>
+            <li><span class="gloss" tabindex="0"><strong>Cleisthenes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KLYS thuh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KLYS-thuh-neez</span>The Athenian reformer who built the first democratic government around 508 BC.</span></span> (<em>Kleisthenes</em>), said KLYS-thuh-neez: The Athenian reformer who built the first democratic government around 508 BC.</li>
+            <li><span class="gloss" tabindex="0"><strong>Hippias</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HIP ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HIP-ee-us</span>The son of Peisistratus who ruled Athens until 510 BC.</span></span> (<em>Hippias</em>), said HIP-ee-us: The son of Peisistratus who ruled Athens until 510 BC.</li>
+            <li><span class="gloss" tabindex="0"><strong>local districts</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'deemz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DEEMZ</span>The villages and neighborhoods that were the building blocks of the Athenian state.</span></span> (<em>demoi</em>), said DEEMZ: The villages and neighborhoods that were the building blocks of the Athenian state.</li>
+            <li><span class="gloss" tabindex="0"><strong>equal right to speak</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ee seh goh REE uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ee-seh-goh-REE-uh</span>The right of every citizen to speak in the Assembly.</span></span> (<em>isegoria</em>), said ee-seh-goh-REE-uh: The right of every citizen to speak in the Assembly.</li>
+            <li><span class="gloss" tabindex="0"><strong>vote to exile</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'OS truh siz um')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">OS-truh-siz-um</span>A vote in which citizens could send a powerful man away for ten years.</span></span> (<em>ostrakismos</em>), said OS-truh-siz-um: A vote in which citizens could send a powerful man away for ten years.</li>
+            <li><span class="gloss" tabindex="0"><strong>rule of the people</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'deh moh krah TEE uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">deh-moh-krah-TEE-uh</span>The Greek word for democracy: the people hold the power.</span></span> (<em>demokratia</em>), said deh-moh-krah-TEE-uh: The Greek word for democracy: the people hold the power.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>A Quarrel Among Nobles</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Now the nobles fought for power. One was named Isagoras. His rival was <span class="gloss" tabindex="0"><strong>Cleisthenes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KLYS thuh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KLYS-thuh-neez</span>The Athenian reformer who built the first democratic government around 508 BC.</span></span> (<em>Kleisthenes</em>), from a famous family. When Cleisthenes was losing, he did something new. According to Herodotus, he brought the common people into his party, giving them a stake in the quarrel.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Think about how bold that was. Nobles usually settled such fights among themselves. Cleisthenes broke the habit. He asked ordinary Athenians to help, and they said yes. Once the people had tasted that kind of power, they were not likely to give it back.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Isagoras asked Sparta for help, and a Spartan king arrived with a small force. He drove out hundreds of families who supported Cleisthenes. But the Athenian <span class="gloss" tabindex="0"><strong>council</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOWN sul')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOWN-sul</span>A group chosen to plan and manage a government's daily work.</span></span> refused to obey. The people rose up and trapped the Spartans on the Acropolis. After two days, the Spartans left. Cleisthenes returned in triumph, and he now had the support of the people.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice what the Athenians did here. They had just been freed from a tyrant, and now a foreign army stood in their city. They did not wait for their leaders to decide. They acted themselves. This is the first real sign of a people who see themselves as owners of their city.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Cleisthenes Remakes Athens</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 508 or 507 BC, Cleisthenes changed how Athens was organized. Before, a man's place depended on his family. Cleisthenes made it depend on where he lived. Athens and the land around it were divided into small local districts called <span class="gloss" tabindex="0"><strong>demes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'deemz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DEEMZ</span>The villages and neighborhoods that were the building blocks of the Athenian state.</span></span> (<em>demoi</em>). These were villages and neighborhoods where people knew each other. The demes were grouped into ten new <span class="gloss" tabindex="0"><strong>tribes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'tribe')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">tribe</span>A large group of citizens in one civic division. In Athens, a tribe was a set of local districts.</span></span>. Each tribe mixed people from the city, the coast, and the inland country. A noble family could no longer control a whole region.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">He also set up a new <span class="gloss" tabindex="0"><strong>council</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOWN sul')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOWN-sul</span>A group chosen to plan and manage a government's daily work.</span></span> of five hundred men. Fifty came from each tribe, and they were chosen by lot, which means by drawing names. The council prepared the business for the Assembly, where all citizens could speak and vote. Even the poorest citizens, the <span class="gloss" tabindex="0"><strong>laborers</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'THEE teez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">THEE-teez</span>The poorest Athenian citizens, who worked for hire.</span></span>, could take part in the Assembly. This was <span class="gloss" tabindex="0"><strong>equal right to speak</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ee seh goh REE uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ee-seh-goh-REE-uh</span>The right of every citizen to speak in the Assembly.</span></span> (<em>isegoria</em>).</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Cleisthenes added one more tool. Once a year, the citizens could vote on whether to send a powerful man away. This was <span class="gloss" tabindex="0"><strong>ostracism</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'OS truh siz um')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">OS-truh-siz-um</span>A vote in which citizens could send a powerful man away for ten years.</span></span> (<em>ostrakismos</em>). A man who got the most votes had to leave for ten years. It was a way to stop any one man from growing too strong and becoming a <span class="gloss" tabindex="0"><strong>tyrant</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TY runt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TY-runt</span>In Greece, a man who took power by force. He was not always cruel.</span></span> again.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Why did these changes matter? Think about the old way. A powerful noble could count on the men of his own region to follow him. After Cleisthenes, a man from the coast sat beside a man from the city and a man from the hills. They worked together in the same tribe. They learned to think of themselves as Athenians first. That shared loyalty helped to hold the city together.</p>
+    </div>
+
+    <div class="figure-card">
+        <div class="callout-label">&#128100; FIGURE SPOTLIGHT &middot; Cleisthenes</div>
+        <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;"><span class="gloss" tabindex="0"><strong>Cleisthenes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KLYS thuh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KLYS-thuh-neez</span>The Athenian reformer who built the first democratic government around 508 BC.</span></span> came from the Alcmaeonid family, one of the great noble families of Athens. His family had a complicated history. They had been exiled by the sons of Peisistratus and had worked to bring those tyrants down. After the fall of Hippias, Cleisthenes lost a power struggle with a rival named Isagoras, and then won it by turning to the Athenian people. Our main sources are Herodotus and Aristotle, who tell this story in somewhat different ways. We do not know exactly how Cleisthenes planned his reforms, or whether he foresaw their results. We do know that the city he left behind was organized differently from any before it. Little more is known about his life after 507 BC. The record goes quiet, but his work shaped Athens for generations.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Democracy, and Its Limits</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Greek word for this new system was <span class="gloss" tabindex="0"><strong>demokratia</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'deh moh krah TEE uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">deh-moh-krah-TEE-uh</span>The Greek word for democracy: the people hold the power.</span></span> (<em>demokratia</em>), which means rule of the people. Herodotus wrote that once Athens was free of tyrants, it grew strong. Athenians fought harder for themselves than they ever had for a master.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">But this was not yet full democracy. The old Council of the Hill of Ares still held great power. Real change would wait for a reformer named Ephialtes in 462 BC. Even then, many people were left out. Only free men born in Athens counted as citizens. Women could not vote or hold office. Slaves were not citizens. Foreigners living in Athens were not citizens either, even if their families had lived there for years.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This is a hard fact of Athenian history. Athenians created one of the first systems in which ordinary citizens helped to rule. They also kept most of the people who lived in their city out of it. Both parts of the story are true, and both parts are needed to understand Athens.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Keep this balance in mind as you read on. A history that only praises Athens leaves out many people. A history that only blames Athens leaves out what was new and brave. A good student of history holds both thoughts.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 20.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Cleisthenes did not plan a perfect democracy, and he did not finish the job. But he changed the way Athenians thought about who should rule. Notice that the change began with a quarrel among nobles, and that Sparta, of all cities, gave it a push.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 20.2 &middot; Cleisthenes Invents Democracy</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

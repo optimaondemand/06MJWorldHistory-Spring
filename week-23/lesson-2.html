@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 23.2</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 3 &middot; Module 23</div>
+        <div style="font-size: 12px; color: #666;">Pericles' Athens: Empire, Democracy, and the Stage</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 23.2 &middot; Wednesday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Parthenon and the Theater of Dionysus</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 23.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Parthenon and the Theater of Dionysus</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">tragedy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TRAJ uh dee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRAJ-uh-dee</span>A serious play about human suffering and hard choices.</span></span></li>
+            <li><span class="gloss" tabindex="0">comedy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOM uh dee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOM-uh-dee</span>A play meant to make people laugh, often by poking fun at real people and ideas.</span></span></li>
+            <li><span class="gloss" tabindex="0">chorus<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOR us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOR-us</span>A group of performers who sing and dance together in a play.</span></span></li>
+            <li><span class="gloss" tabindex="0">Acropolis<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'uh KROP uh lis')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-KROP-uh-lis</span>The high rock at the center of Athens, crowned with temples.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; MAIN MAP &middot; Athens at Its Height</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg/1280px-Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg" alt="Black and white relief map of Attica and the Aegean with Athens, Piraeus, Salamis, Aegina, and Sparta labeled" />
+        <div class="img-credit">Map by GreekMaps, Wikimedia Commons, CC BY 4.0.</div>
+        <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">Athens and its harbor, Piraeus, sat close together on the coast. The city stood at the center of a sea empire.</p>
+        <div style="margin-top: 12px; font-size: 13px; color: #444;"><strong>Geographical Glossary:</strong> <strong>Athens</strong> (ATH-inz): the city whose Acropolis you will read about. <strong>Piraeus</strong> (py-REE-us): the harbor that brought ships and trade. <strong>Sparta</strong> (SPAR-tuh): the rival whose fear of Athens would grow.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What did Athens build with its wealth and freedom?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The same city that ruled an empire also built the Parthenon and filled a great theater. Today you will see how contest, generosity, and wonder shaped Athenian life.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the Acropolis building program.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what the City Dionysia was and how it was paid for.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell what Greek tragedy and comedy did for the city.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> compare Herodotus and Thucydides as the first historians.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page and the main map above.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Rock Above the City</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Under Pericles, Athens began a great building program on the <span class="gloss" tabindex="0"><strong>acropolis</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'uh KROP uh lis')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-KROP-uh-lis</span>The high rock at the center of Athens, crowned with temples.</span></span>. The Persians had burned the old temples. Now Athens built new ones, grander than any before. The greatest was the Parthenon, a temple to the goddess Athena, begun in 447 BC. It was built of white marble and finished in just fifteen years or so. Inside stood a huge statue of Athena by the sculptor Phidias, made of gold and ivory.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Not everyone approved of the cost. Part of the money came from the tribute paid by Athens' allies. Plutarch reports that Pericles' enemies said Athens was decorating itself like a vain woman with other people's money. Pericles answered that the city had done the work of defending Greece, and so could spend the funds on its glory. This was a quarrel about how far a ruling city may use the wealth of those it rules.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Imagine walking up the Acropolis in those days. The marble shone in the sun. The temple stood above the whole city, and every Athenian could see it from home. It reminded them of Athena, their protector, and of their city's victory over Persia. It was also a message to other Greeks that Athens was great.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>City Dionysia</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'dy uh NISH uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dy-uh-NISH-uh</span>The yearly spring festival of the god Dionysus, where plays were performed.</span></span> (<em>Dionysia</em>), said dy-uh-NISH-uh: The yearly spring festival of the god Dionysus, where plays were performed.</li>
+            <li><span class="gloss" tabindex="0"><strong>play sponsor</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'koh REE gos')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">koh-REE-gos</span>A rich citizen who paid for a chorus as a public duty.</span></span> (<em>choregos</em>), said koh-REE-gos: A rich citizen who paid for a chorus as a public duty.</li>
+            <li><span class="gloss" tabindex="0"><strong>paid teachers of argument</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOF ists')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOF-ists</span>Traveling teachers who charged fees to train young men in speaking and arguing.</span></span> (<em>sophistai</em>), said SOF-ists: Traveling teachers who charged fees to train young men in speaking and arguing.</li>
+            <li><span class="gloss" tabindex="0"><strong>Aeschylus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ES kuh lus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ES-kuh-lus</span>An early Athenian writer of tragedies.</span></span> (<em>Aischylos</em>), said ES-kuh-lus: An early Athenian writer of tragedies.</li>
+            <li><span class="gloss" tabindex="0"><strong>Sophocles</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOF uh kleez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOF-uh-kleez</span>An Athenian writer of tragedies, author of Antigone.</span></span> (<em>Sophokles</em>), said SOF-uh-kleez: An Athenian writer of tragedies, author of Antigone.</li>
+            <li><span class="gloss" tabindex="0"><strong>Aristophanes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'air ih STOF uh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">air-ih-STOF-uh-neez</span>The Athenian writer of comedies who mocked politicians and thinkers.</span></span> (<em>Aristophanes</em>), said air-ih-STOF-uh-neez: The Athenian writer of comedies who mocked politicians and thinkers.</li>
+            <li><span class="gloss" tabindex="0"><strong>Herodotus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'hih ROD uh tus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">hih-ROD-uh-tus</span>The Greek writer who told the story of the Persian Wars.</span></span> (<em>Herodotos</em>), said hih-ROD-uh-tus: The Greek writer who told the story of the Persian Wars.</li>
+            <li><span class="gloss" tabindex="0"><strong>Thucydides</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'thoo SID ih deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">thoo-SID-ih-deez</span>The Athenian writer who recorded the war between Athens and Sparta.</span></span> (<em>Thoukydides</em>), said thoo-SID-ih-deez: The Athenian writer who recorded the war between Athens and Sparta.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>A Festival for a God</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Athens held many festivals, and the City <span class="gloss" tabindex="0"><strong>City Dionysia</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'dy uh NISH uh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">dy-uh-NISH-uh</span>The yearly spring festival of the god Dionysus, where plays were performed.</span></span> (<em>Dionysia</em>) was among the grandest. Each spring, the city honored the god Dionysus with a procession and with plays. The plays were performed in the Theater of Dionysus, on the slope of the Acropolis. It held nearly twenty thousand people. Think of that: a large share of the citizens could gather in one place to watch a play.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The festival was a contest, like the Olympics you met earlier. Playwrights competed, and judges chosen by lot awarded prizes. The city also chose rich citizens to pay for the chorus. Such a person was called a <span class="gloss" tabindex="0"><strong>play sponsor</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'koh REE gos')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">koh-REE-gos</span>A rich citizen who paid for a chorus as a public duty.</span></span> (<em>choregos</em>). He paid for training and costumes, as a duty to the city. If his chorus won, he won glory, and so did the city. The Greek love of honor was thus put to public use. Private ambition fed the city's pride.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice how different this is from the Homeric hero you met in Lesson 19.1. There, glory belonged to one man. Here, a rich man's gift to the city won glory for him and for everyone. The old love of contest was now used to serve the community. This is a good example of how a city can guide its citizens' ambition.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Tragedy and Hard Choices</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Greek <span class="gloss" tabindex="0"><strong>tragedy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TRAJ uh dee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TRAJ-uh-dee</span>A serious play about human suffering and hard choices.</span></span> took stories from myth and made the audience face a hard question. <span class="gloss" tabindex="0"><strong>Aeschylus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ES kuh lus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ES-kuh-lus</span>An early Athenian writer of tragedies.</span></span> (<em>Aischylos</em>) wrote <em>The Persians</em> in 472 BC, only a few years after Salamis. It is the oldest Greek play we still have, and it shows the war from the Persian side. <span class="gloss" tabindex="0"><strong>Sophocles</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOF uh kleez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOF-uh-kleez</span>An Athenian writer of tragedies, author of Antigone.</span></span> (<em>Sophokles</em>) wrote the play <em>Antigone</em>. In it, Antigone buries her dead brother against the order of King Creon, who says the brother was a traitor. The play asks whether a person's duty to family can outweigh the law of the state. The audience was forced to think about it. No simple answer was offered.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The <span class="gloss" tabindex="0"><strong>chorus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOR us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOR-us</span>A group of performers who sing and dance together in a play.</span></span> sang and danced and often spoke for the city itself. It reminded the audience that these choices affected a whole community.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">These plays were not just entertainment. They were part of a religious festival, and they gave the whole city a chance to think about justice, duty, and the limits of human power together. A young man who watched Antigone would remember it when he later served on a jury or voted in the Assembly.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Comedy and the Sophists</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><span class="gloss" tabindex="0"><strong>Comedy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'KOM uh dee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KOM-uh-dee</span>A play meant to make people laugh, often by poking fun at real people and ideas.</span></span> had a different job. <span class="gloss" tabindex="0"><strong>Aristophanes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'air ih STOF uh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">air-ih-STOF-uh-neez</span>The Athenian writer of comedies who mocked politicians and thinkers.</span></span> (<em>Aristophanes</em>) wrote funny plays that poked fun at real people, even the leaders of Athens. In 423 BC, he wrote <em>The Clouds</em>. It mocks the <span class="gloss" tabindex="0"><strong>paid teachers of argument</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SOF ists')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SOF-ists</span>Traveling teachers who charged fees to train young men in speaking and arguing.</span></span> (<em>sophistai</em>), who charged fees to teach young men how to win arguments. It also made fun of a thinker named Socrates. Aristophanes was a conservative, and he feared that clever talk could make a weak argument seem strong. Think about that. A free city let a playwright make fun of its own leaders and thinkers in front of twenty thousand people.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The First Historians</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This was also the time of the first great historians. <span class="gloss" tabindex="0"><strong>Herodotus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'hih ROD uh tus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">hih-ROD-uh-tus</span>The Greek writer who told the story of the Persian Wars.</span></span> (<em>Herodotos</em>) wrote about the Persian Wars and the world around them. He collected stories from many places and often told them with wonder. He shows the Greeks and the Persians as people with their own reasons.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><span class="gloss" tabindex="0"><strong>Thucydides</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'thoo SID ih deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">thoo-SID-ih-deez</span>The Athenian writer who recorded the war between Athens and Sparta.</span></span> (<em>Thoukydides</em>) was a younger man, and he wrote about the war between Athens and Sparta. He wanted facts, and he looked for the causes behind them. He was stern where Herodotus was warm. Together they started a tradition of asking what happened, and why. They were rivals in method, and history gained from both.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">You should notice what these writers gave us. Before them, the past was mostly told as myth or praise. After them, people began to check sources, compare stories, and search for causes. That habit is still the heart of history. When you study history in this course, you are following the road they began.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 23.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Athens built the Parthenon and filled its theater, and it did so in the same years that it ruled an empire. The city's great works came out of its freedom and its wealth. Whether they also hid its dangers is a question that Thucydides, in the next lesson, will help you ask.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 23.2 &middot; The Parthenon and the Theater of Dionysus</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
