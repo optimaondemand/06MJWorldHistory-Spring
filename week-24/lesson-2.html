@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 24.2</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 3 &middot; Module 24</div>
+        <div style="font-size: 12px; color: #666;">The Peloponnesian War</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 24.2 &middot; Wednesday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">How Athens Lost the War</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 24.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">How Athens Lost the War</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">blockade<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'blah KAYD')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">blah-KAYD</span>The use of ships or soldiers to stop food and goods from reaching a city.</span></span></li>
+            <li><span class="gloss" tabindex="0">expedition<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ek spuh DISH un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ek-spuh-DISH-un</span>A long trip by an army or fleet with a goal.</span></span></li>
+            <li><span class="gloss" tabindex="0">Long Walls<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'long wawlz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LONG WAWLZ</span>Two walls that ran from Athens to its harbor and kept the road to the sea safe.</span></span></li>
+            <li><span class="gloss" tabindex="0">siege<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'seej')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEEJ</span>An attack in which an army surrounds a city and cuts it off until it gives up.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; MAIN MAP &middot; From Melos to the Hellespont</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg/1280px-Map_of_Ancient_Greece_and_the_Aegean_5th_Century_B.C.jpg" alt="Black and white relief map of Greece and the Aegean with Athens, Melos, Sparta, Sardis, and the Hellespont labeled" />
+        <div class="img-credit">Map by GreekMaps, Wikimedia Commons, CC BY 4.0.</div>
+        <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">The island of Melos lies south of Athens. The last battle was fought far to the northeast, on the Hellespont, the narrow water that leads toward the Black Sea.</p>
+        <div style="margin-top: 12px; font-size: 13px; color: #444;"><strong>Geographical Glossary:</strong> <strong>Melos</strong> (MEE-los): a small island south of Athens. <strong>Sardis</strong> (SAR-dis): the Persian center in Asia Minor, where Persian money came from. <strong>Hellespont</strong> (HEL-es-pont): the narrow strait where Athens lost its fleet. <strong>Athens</strong> (ATH-inz) and <strong>Piraeus</strong> (py-REE-us): the city and its harbor. <strong>Sparta</strong> (SPAR-tuh): the winner of the war.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">How does a great city lose everything in a few years?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After the Peace of Nicias, Athens took one risk after another. Today you will see how pride, a far-off expedition, and Persian money brought the city down.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what the Melian Dialogue shows about how Athens used its power.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe why the Sicilian expedition failed.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Persian money helped Sparta.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> tell how the war ended in 404 BC.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page and the main map above.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>A Brilliant and Dangerous Young Man</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The peace did not last. A rising Athenian named <span class="gloss" tabindex="0"><strong>Alcibiades</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'al sih BY uh deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">al-sih-BY-uh-deez</span>A brilliant, daring Athenian who urged the attack on Sicily and later changed sides.</span></span> (<em>Alkibiades</em>) was soon pushing the city back toward war. He was rich, handsome, and a gifted speaker. After his father died, he had grown up in the house of Pericles. He had also spent time with Socrates. He wanted fame more than anything, and he was willing to take great risks to win it.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Athens and Sparta stayed formally at peace for some years. But each side kept helping its friends and harming the other's, so the peace was more of a pause than an ending.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>Nicias</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NISH ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NISH-ee-us</span>A careful, wealthy Athenian general who helped make the peace of 421 BC.</span></span> (<em>Nikias</em>), said NISH-ee-us: A careful, wealthy Athenian general who helped make the peace of 421 BC.</li>
+            <li><span class="gloss" tabindex="0"><strong>Alcibiades</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'al sih BY uh deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">al-sih-BY-uh-deez</span>A brilliant, daring Athenian who urged the attack on Sicily and later changed sides.</span></span> (<em>Alkibiades</em>), said al-sih-BY-uh-deez: A brilliant, daring Athenian who urged the attack on Sicily and later changed sides.</li>
+            <li><span class="gloss" tabindex="0"><strong>Lysander</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ly SAN der')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ly-SAN-der</span>The Spartan admiral who won the war at sea.</span></span> (<em>Lysandros</em>), said ly-SAN-der: The Spartan admiral who won the war at sea.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Melian Dialogue</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 416 BC, Athens sent a fleet to the island of Melos. The Melians had stayed out of the war. They were colonists from Sparta, but they wanted to be left alone. The Athenians demanded that they join the empire and pay tribute.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Thucydides tells what was said in a famous scene we call the Melian Dialogue. He wrote the speeches as he thought the speakers would have spoken. The Athenians argued that right and wrong matter only between equals. Among those who are not equal, they said, the strong do what they can and the weak accept what they must. The Melians answered that this was unjust, and that they hoped the gods and Sparta would help them.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Sparta did not come. Melos held out, but the Athenians took the island after a <span class="gloss" tabindex="0"><strong>siege</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'seej')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SEEJ</span>An attack in which an army surrounds a city and cuts it off until it gives up.</span></span>. They killed the men and sold the women and children into slavery. Thucydides does not stop to scold. He lets the story speak for itself. Think about what the Athenians said. If the strong may do whatever they can, then no city is safe, not even Athens. Thucydides wants his readers to think about what happens when people decide that justice does not matter. The next year, Athens would learn that the strong do not always stay strong.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Great Expedition to Sicily</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Sicily is a large island far to the west. Some Sicilians asked Athens for help against Syracuse, a powerful city. Alcibiades urged the Athenians to accept. <span class="gloss" tabindex="0"><strong>Nicias</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NISH ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NISH-ee-us</span>A careful, wealthy Athenian general who helped make the peace of 421 BC.</span></span> (<em>Nikias</em>) warned that Sicily was too far away and the cost too high. Nicias thought that asking for a huge force would frighten the Athenians. Instead, they gave him exactly what he asked for.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Remember that Sicily was a very long sail from Athens. Food and supplies had to cross the sea, and any mistake would be costly. An attack there was a gamble with the city's whole fleet.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 415 BC the <span class="gloss" tabindex="0"><strong>expedition</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ek spuh DISH un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ek-spuh-DISH-un</span>A long trip by an army or fleet with a goal.</span></span> sailed. It was one of the largest forces Athens ever sent. Just before it left, the stone statues of Hermes were broken all over Athens in a single night. Enemies of Alcibiades blamed him. He was called home to stand trial, but he ran away to Sparta instead. There he gave the Spartans two pieces of advice. Send a Spartan commander to Syracuse, and set up a fort inside the land of Athens, so the Spartans could raid all year long. Sparta did both.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Syracuse held out. The Athenian fleet was trapped in the harbor and destroyed in 413 BC. The army tried to march away, but it was caught. Thousands of men were taken prisoner and put to work in stone quarries, where many died. Nicias was put to death. Thucydides called it one of the greatest disasters of the whole war. Athens had lost its best ships, thousands of its men, and much of its money all at once.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Persian Gold</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Persia had watched the Greeks fight each other for years. After Sicily, many of Athens' allies rebelled. The Persian governor at Sardis offered Sparta money for ships. In return, Persia wanted the Greek cities of Asia Minor back.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Think how strange that is. Sparta had fought Persia at Thermopylae, and now it took Persian gold. The Spartans had never before been a sea power. With Persian money they built a fleet. <span class="gloss" tabindex="0"><strong>Lysander</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ly SAN der')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ly-SAN-der</span>The Spartan admiral who won the war at sea.</span></span> (<em>Lysandros</em>) was a clever Spartan admiral who made friends with a Persian prince and got more money. Athens fought on for years and even won some battles, and Alcibiades came back to lead for a time. But the money gave Sparta what it had always lacked.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The End at the Hellespont</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 405 BC, the Athenian fleet camped on the beach at a place called Aegospotami, on the Hellespont. Lysander's fleet lay across the water. Each day the Athenian crews went ashore to find food. Alcibiades, who lived nearby, is said to have warned them to move to a safer place. They ignored him. On the fifth day, Lysander sailed over while the crews were scattered on the shore. He captured almost every ship.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Now Athens had no fleet. Lysander set up a <span class="gloss" tabindex="0"><strong>blockade</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'blah KAYD')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">blah-KAYD</span>The use of ships or soldiers to stop food and goods from reaching a city.</span></span> of Piraeus, and the city began to starve. In 404 BC, Athens gave up. Some of Sparta's allies wanted the city destroyed. Sparta refused, because Athens had served Greece well against Persia. But it ordered Athens to pull down the <span class="gloss" tabindex="0"><strong>Long Walls</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'long wawlz')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LONG WAWLZ</span>Two walls that ran from Athens to its harbor and kept the road to the sea safe.</span></span>, and the Athenians did so while flute players played.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Sparta then helped a group of thirty rich Athenians take power. They ruled harshly for about a year. Democracy had lost, and so had the empire. You will see in the next lesson what this did to one famous Athenian, Socrates.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 24.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Athens lost its fleet, its walls, and its freedom in the space of a few years. Part of the cause was Spartan skill and Persian money. Part of it was Athens' own choices. Thucydides leaves it to you to decide how much of each.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 24.2 &middot; How Athens Lost the War</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>

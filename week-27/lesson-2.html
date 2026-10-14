@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 27.2</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 3 &middot; Module 27</div>
+        <div style="font-size: 12px; color: #666;">Alexander's Empire and the Hellenistic World</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 27.2 &middot; Wednesday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">The Hellenistic World: Greek Cities in Asia</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 27.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">The Hellenistic World: Greek Cities in Asia</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">edict<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EE dikt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EE-dikt</span>An official order or announcement from a ruler.</span></span></li>
+            <li><span class="gloss" tabindex="0">Hellenistic<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'hel uh NISS tik')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">hel-uh-NISS-tik</span>Greek-like. It describes the time and the lands where Greek culture spread after Alexander.</span></span></li>
+            <li><span class="gloss" tabindex="0">hieroglyphs<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HY ruh glifs')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HY-ruh-glifs</span>The picture writing of ancient Egypt.</span></span></li>
+            <li><span class="gloss" tabindex="0">scholar<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SKOL er')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SKOL-er</span>A person who spends life studying and learning.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; MAIN MAP &middot; The Kingdoms of the Successors</div>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Diadochi_kingdoms_301_200.jpg/2000px-Diadochi_kingdoms_301_200.jpg" alt="Two historical atlas maps side by side showing the kingdoms of Alexander's successors around 301 BC and around 200 BC, with Egypt, Macedonia, Syria, Parthia, and Bactria labeled" />
+        <div class="img-credit">Map from William R. Shepherd, Historical Atlas, Perry-Castañeda Library Map Collection, Wikimedia Commons, public domain.</div>
+        <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">The map on the left shows the successor kingdoms soon after 301 BC. The map on the right shows the same lands about a hundred years later. Compare the borders. Which kingdoms grew, and which shrank?</p>
+        <div style="margin-top: 12px; font-size: 13px; color: #444;"><strong>Geographical Glossary:</strong> <strong>Egypt</strong> (EE-jipt) and <strong>Alexandria</strong> (al-ig-ZAN-dree-uh): the kingdom of the Ptolemies and its great port. <strong>Macedonia</strong> (mass-eh-DOH-nee-uh): the old homeland, now held by another dynasty. <strong>Syria</strong> (SEER-ee-uh): the heart of the Seleucid kingdom. <strong>Bactria</strong> (BAK-tree-uh): the far eastern land where Greeks settled and later ruled. <strong>Rhodes</strong> (rohdz): the island where the Colossus stood.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What happens when Greek cities and Greek kings rule lands that are not Greek?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Alexander's empire broke apart, but his conquests changed the world. Today you will see the new kingdoms, the new cities, and the new learning that followed.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> name the three main kingdoms that grew from Alexander's empire.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Greek became a common language across many lands.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe two wonders and two thinkers of the Hellenistic world.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what the Rosetta Stone and the edicts of Asoka show about rule over other peoples.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page and the main map above.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Generals Divide the Empire</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After Alexander died in 323 BC, his generals fought for forty years. In the end, three great kingdoms stood. <span class="gloss" tabindex="0"><strong>Ptolemy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TOL uh mee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TOL-uh-mee</span>Alexander's general who took Egypt and founded a line of Greek kings there.</span></span> (<em>Ptolemaios</em>) took Egypt, and his family ruled it for almost three hundred years. <span class="gloss" tabindex="0"><strong>Seleucus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sih LOO kus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sih-LOO-kus</span>Alexander's general who took most of the old Persian lands in Asia.</span></span> (<em>Seleukos</em>) took most of the old Persian lands, from Syria far to the east. It was a huge kingdom, and hard to hold. The family of another general held Macedonia. Why did the empire break up? Alexander's heir was only a baby, and no one on the field was strong enough to hold everything together. Each general wanted the biggest piece.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">We call this age <span class="gloss" tabindex="0"><strong>Hellenistic</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'hel uh NISS tik')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">hel-uh-NISS-tik</span>Greek-like. It describes the time and the lands where Greek culture spread after Alexander.</span></span>. The word means "Greek-like." Greek kings ruled, and Greek became the language of government. But do not imagine one blended world. In Egypt, in Syria, and in the far east, most people were not Greek. They kept their own gods, laws, and languages. The Greeks ruled, and they lived in their own cities.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>Ptolemy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TOL uh mee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TOL-uh-mee</span>Alexander's general who took Egypt and founded a line of Greek kings there.</span></span> (<em>Ptolemaios</em>), said TOL-uh-mee: Alexander's general who took Egypt and founded a line of Greek kings there.</li>
+            <li><span class="gloss" tabindex="0"><strong>Seleucus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'sih LOO kus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">sih-LOO-kus</span>Alexander's general who took most of the old Persian lands in Asia.</span></span> (<em>Seleukos</em>), said sih-LOO-kus: Alexander's general who took most of the old Persian lands in Asia.</li>
+            <li><span class="gloss" tabindex="0"><strong>Euclid</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'YOO klid')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">YOO-klid</span>The Greek mathematician who wrote a famous book on geometry.</span></span> (<em>Eukleides</em>), said YOO-klid: The Greek mathematician who wrote a famous book on geometry.</li>
+            <li><span class="gloss" tabindex="0"><strong>Eratosthenes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'air uh TOSS thuh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">air-uh-TOSS-thuh-neez</span>The scholar of Alexandria who measured the size of the Earth.</span></span> (<em>Eratosthenes</em>), said air-uh-TOSS-thuh-neez: The scholar of Alexandria who measured the size of the Earth.</li>
+            <li><span class="gloss" tabindex="0"><strong>Archimedes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ar kuh MEE deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ar-kuh-MEE-deez</span>The great inventor and mathematician of Syracuse.</span></span> (<em>Archimedes</em>), said ar-kuh-MEE-deez: The great inventor and mathematician of Syracuse.</li>
+            <li><span class="gloss" tabindex="0"><strong>Asoka</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'uh SHOH kuh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-SHOH-kuh</span>The Indian king who had his laws carved on rocks and pillars.</span></span> (<em>Ashoka</em>), said uh-SHOH-kuh: The Indian king who had his laws carved on rocks and pillars.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Greek Cities in Asia</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The new kings founded many cities, often named after themselves. Seleucus built Antioch in Syria and others. Alexander himself had founded several cities named Alexandria. Greek soldiers and settlers moved in and built theaters, marketplaces, and gymnasiums, the places where Greek men exercised and talked.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">As a result, Greek became the common language of trade across many lands. A merchant could travel from Egypt to Bactria and do business in Greek. This is one reason the Greek language lasted so long. Money, ideas, and goods moved along these roads, and some Greeks even grew rich on that trade.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Alexandria: City of Learning</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The most famous of these cities was Alexandria in Egypt. The Ptolemies built there a great library and a center called the Museum, and they paid <span class="gloss" tabindex="0"><strong>scholars</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SKOL er')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SKOL-er</span>A person who spends life studying and learning.</span></span> to study. Some of the most gifted people of the age worked there. Books in those days were copied by hand on rolls of papyrus. A library needed a great deal of money and many workers. The kings of Egypt wanted Alexandria to be the center of Greek learning, and they spent money to make it so.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><span class="gloss" tabindex="0"><strong>Euclid</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'YOO klid')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">YOO-klid</span>The Greek mathematician who wrote a famous book on geometry.</span></span> (<em>Eukleides</em>) wrote the <em>Elements</em>, a book on geometry that students used for over two thousand years. <span class="gloss" tabindex="0"><strong>Eratosthenes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'air uh TOSS thuh neez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">air-uh-TOSS-thuh-neez</span>The scholar of Alexandria who measured the size of the Earth.</span></span> (<em>Eratosthenes</em>) led the Library. He noticed that at noon on a certain day, a well in southern Egypt had no shadow, while in Alexandria a stick did. From that difference and the distance between the cities, he worked out how big the Earth is. His answer was remarkably close to the real one.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;"><span class="gloss" tabindex="0"><strong>Archimedes</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'ar kuh MEE deez')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">ar-kuh-MEE-deez</span>The great inventor and mathematician of Syracuse.</span></span> (<em>Archimedes</em>) lived in Syracuse, in Sicily. He studied levers, circles, and floating objects, and he designed clever machines. A story told long afterward says he found a way to test a golden crown by putting it in water. Whatever the truth of the story, his work was real.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Two Wonders</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Two famous buildings of the age stood near the sea. The Pharos was a tall lighthouse built near Alexandria around 280 BC. It was one of the tallest buildings in the world, and sailors could see its fire from far away. The Colossus was a giant bronze statue of the sun god on the island of Rhodes. The Rhodians built it after they survived a long siege. It stood about a hundred feet high, and an earthquake knocked it down some fifty years later. Greeks counted both among the wonders of the world. Both buildings show how rich the new kingdoms and cities had become.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">New schools of thought also grew in this age. The Stoics taught that a person should do his duty and stay calm, whatever happens. The Epicureans taught that a quiet life, free of fear, is the best life. These ideas suited a world where ordinary people no longer shaped the great decisions of kings.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Two Stones and Two Peoples</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 196 BC, the priests of Egypt wrote a decree to honor the boy king Ptolemy V. It was carved on a stone in three kinds of writing: Egyptian <span class="gloss" tabindex="0"><strong>hieroglyphs</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'HY ruh glifs')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">HY-ruh-glifs</span>The picture writing of ancient Egypt.</span></span>, an everyday Egyptian script, and Greek. We call it the Rosetta Stone. It shows Greek kings ruling Egypt while Egyptian priests still ran the temples and wrote in their own way. Think about what life was like for an Egyptian under Greek rule. You could pray in your own temple and speak your own language. But the king and his officials spoke Greek, and anyone who wanted a government job had to learn it. French soldiers found the stone in 1799. Later, a scholar used the Greek part to read the hieroglyphs for the first time in centuries.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The same thing happened far to the east. In India, a king named <span class="gloss" tabindex="0"><strong>Asoka</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'uh SHOH kuh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">uh-SHOH-kuh</span>The Indian king who had his laws carved on rocks and pillars.</span></span> (<em>Ashoka</em>), the grandson of Chandragupta, had his <span class="gloss" tabindex="0"><strong>edicts</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EE dikt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EE-dikt</span>An official order or announcement from a ruler.</span></span> carved on rocks and pillars about 250 BC. They urged his people to be kind and honest. A few were written in Greek, for the Greeks who lived in his kingdom. The Greek language was now so common that even an Indian king used it.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 27.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The Hellenistic world was Greek in language and city life, but it was ruled by kings, not by citizens. Local people kept their own gods and customs, and the Greeks ruled alongside them. Greek learning spread widely, and later Roman rulers would inherit much of it.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 3 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 27.2 &middot; The Hellenistic World: Greek Cities in Asia</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
