@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 36.2</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 4 &middot; Module 36</div>
+        <div style="font-size: 12px; color: #666;">Christianity and Constantine</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 36.2 &middot; Wednesday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Constantine and the Christian Empire</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 36.2</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Constantine and the Christian Empire</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">edict<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EE dikt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EE-dikt</span>A public order issued by a ruler.</span></span></li>
+            <li><span class="gloss" tabindex="0">tetrarchy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TET rar kee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TET-rar-kee</span>Rule by four men. Diocletian split the empire among four rulers.</span></span></li>
+            <li><span class="gloss" tabindex="0">creed<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kreed')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KREED</span>A short statement of what a group of people believe.</span></span></li>
+            <li><span class="gloss" tabindex="0">bishop<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BISH up')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BISH-up</span>A senior leader of the Christian church who oversees the churches of a region.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; GEOGRAPHICAL GLOSSARY</div>
+        <div style="font-size: 14px; color: #444;"><strong>Rome</strong> (rohm): the old capital of the empire. <strong>Milvian Bridge</strong> (MIL-vee-un): the bridge over the Tiber just north of Rome where Constantine won in AD 312. <strong>Nicaea</strong> (ny-SEE-uh): the city in what is now Turkey where the church council met in AD 325. <strong>Constantinople</strong> (kon-stan-tih-NOH-pul): the new capital, built on the narrow strait between Europe and Asia. <strong>Aksum</strong> (AHK-soom): the kingdom in what is now Ethiopia, on the trade route to the Red Sea. <strong>Kush</strong> (kush): the old kingdom on the upper Nile, south of Egypt. <strong>Red Sea</strong>: the sea linking Egypt and the Indian Ocean.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">Why did the emperor decide to back the Christians?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Within one man's lifetime, Christians went from being hunted to being favored. Today you will see how that happened, and what it changed.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how Diocletian tried to save the empire and why he persecuted Christians.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how Constantine became emperor and what he did for Christians.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe the Council of Nicaea and the founding of Constantinople.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Constantine changed and what he did not.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Diocletian Rebuilds</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After the long crisis, <span class="gloss" tabindex="0"><strong>Diocletian</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GY us aw REEL ee us vuh LEER ee us dy oh KLEE shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GY-us aw-REEL-ee-us vuh-LEER-ee-us dy-oh-KLEE-shun</span>The emperor who ended the third-century crisis and began the Great Persecution.</span></span> became emperor in AD 284. He was a soldier from a poor family and a hard worker. He saw that the empire was too big for one man. He also acted like a god-king, and people had to kneel before him. So he split it. He took the East himself and gave the West to a partner. Later each of those two ruled with a junior emperor, which is called the <span class="gloss" tabindex="0"><strong>tetrarchy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'TET rar kee')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">TET-rar-kee</span>Rule by four men. Diocletian split the empire among four rulers.</span></span>. The four worked as a team and shared the same goal, which was to keep the empire safe.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">It worked for a time. Frontiers were strengthened, taxes were set, and prices were controlled, though that did not work well. But Diocletian also wanted the old gods honored. He feared that Christians would anger the gods. In AD 303 he began the Great Persecution. Churches were torn down, holy books were burned, and many Christians were killed. It was the worst of the persecutions. It failed, as the others had. In AD 305, Diocletian retired to a palace on the Adriatic coast.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Constantine and the Bridge</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When Diocletian left, the system fell apart. His mother, Helena, was a devout Christian in later life. Soldiers in Britain declared <span class="gloss" tabindex="0"><strong>Constantine</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'FLAY vee us vuh LEER ee us kon stan TY nus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FLAY-vee-us vuh-LEER-ee-us kon-stan-TY-nus</span>The emperor who ended the persecutions and favored the Christians.</span></span> emperor in AD 306 after his father died. Over years of fighting, he beat his rivals. The big test came in AD 312. His enemy <span class="gloss" tabindex="0"><strong>Maxentius</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'mak SEN shus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">mak-SEN-shus</span>Constantine's rival, who ruled Rome and died at the Milvian Bridge.</span></span> held Rome, and Constantine marched on the city.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Two ancient writers tell what happened next, and they do not agree. One says that Constantine had a dream the night before the battle, telling him to paint a sacred Christian sign on his soldiers' shields. The other says he saw a cross of light in the sky. In either story, Constantine believed the Christian God gave him the win. At the Milvian Bridge, he won, and Maxentius drowned in the river. Constantine entered Rome as master of the West.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>Diocletian</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GY us aw REEL ee us vuh LEER ee us dy oh KLEE shun')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GY-us aw-REEL-ee-us vuh-LEER-ee-us dy-oh-KLEE-shun</span>The emperor who ended the third-century crisis and began the Great Persecution.</span></span> (<em>Gaius Aurelius Valerius Diocletianus</em>), said GY-us aw-REEL-ee-us vuh-LEER-ee-us dy-oh-KLEE-shun: The emperor who ended the third-century crisis and began the Great Persecution.</li>
+            <li><span class="gloss" tabindex="0"><strong>Constantine</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'FLAY vee us vuh LEER ee us kon stan TY nus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">FLAY-vee-us vuh-LEER-ee-us kon-stan-TY-nus</span>The emperor who ended the persecutions and favored the Christians.</span></span> (<em>Flavius Valerius Constantinus</em>), said FLAY-vee-us vuh-LEER-ee-us kon-stan-TY-nus: The emperor who ended the persecutions and favored the Christians.</li>
+            <li><span class="gloss" tabindex="0"><strong>Maxentius</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'mak SEN shus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">mak-SEN-shus</span>Constantine's rival, who ruled Rome and died at the Milvian Bridge.</span></span> (<em>Maxentius</em>), said mak-SEN-shus: Constantine's rival, who ruled Rome and died at the Milvian Bridge.</li>
+            <li><span class="gloss" tabindex="0"><strong>Arius</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'AIR ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AIR-ee-us</span>A priest from Alexandria whose teaching about Christ began the argument at Nicaea.</span></span> (<em>Arius</em>), said AIR-ee-us: A priest from Alexandria whose teaching about Christ began the argument at Nicaea.</li>
+            <li><span class="gloss" tabindex="0"><strong>Ezana</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'eh ZAH nah')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">eh-ZAH-nah</span>The king of Aksum who made Christianity his kingdom's faith.</span></span> (<em>Ezana</em>), said eh-ZAH-nah: The king of Aksum who made Christianity his kingdom's faith.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Edict of Milan</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In AD 313, Constantine and the eastern emperor Licinius agreed to end the persecution. Their agreement is known as the Edict of Milan, though some scholars say it was a letter and not a true <span class="gloss" tabindex="0"><strong>edict</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'EE dikt')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">EE-dikt</span>A public order issued by a ruler.</span></span>. It said that everyone, Christian or not, could follow the religion they chose. Property taken from the Christians was returned. Churches that had been shut were opened again, and Christians could meet in the open.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Constantine then went further. He gave money to build great churches, excused Christian leaders from certain taxes, and made Sunday a day of rest. Yet he did not make everyone Christian. Old temples stayed open, and he kept the title of the chief priest of the old religion. He was baptized only as he lay dying in AD 337. Did he truly believe, or did he want a faith that would unite his empire? The sources do not let us be sure, and probably the answer was both.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Council of Nicaea</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Christians were not always agreed. A priest named <span class="gloss" tabindex="0"><strong>Arius</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'AIR ee us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">AIR-ee-us</span>A priest from Alexandria whose teaching about Christ began the argument at Nicaea.</span></span> taught that Christ was a created being and was less than God the Father. Most bishops disagreed. The quarrel was splitting the church. In AD 325, Constantine called about three hundred <span class="gloss" tabindex="0"><strong>bishops</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'BISH up')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">BISH-up</span>A senior leader of the Christian church who oversees the churches of a region.</span></span> to a council at Nicaea. They agreed on a <span class="gloss" tabindex="0"><strong>creed</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kreed')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">KREED</span>A short statement of what a group of people believe.</span></span>, a statement of belief, which is still used by many churches. Notice that the emperor presided over a church council. The state and the church were now bound together.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In AD 330, Constantine dedicated a new capital at the old Greek city of Byzantium, now called Constantinople, or "Constantine's city." It sat on a strait between two seas and was easy to defend. It was also closer to the rich eastern provinces and the Persian frontier. Constantine gave it walls, a harbor, and a great track for chariot races. For a thousand years, it would be a great city.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Far Beyond Rome</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The Christian faith was moving beyond the empire as well. In the 330s, King <span class="gloss" tabindex="0"><strong>Ezana</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'eh ZAH nah')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">eh-ZAH-nah</span>The king of Aksum who made Christianity his kingdom's faith.</span></span> of Aksum, in what is now Ethiopia, became a Christian. His coins changed from the old symbols to the cross. Around the middle of the 300s, Aksum's armies invaded Kush, an old kingdom already weakened for many years.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>What Changed and What Did Not</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Constantine changed a great deal. Christianity went from a hunted faith to a favored one, and bishops now had rank, wealth, and the ear of the emperor. But the empire was still a rule of one man, with an army and a tax collector. It was still Rome.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Look back over the whole course. You began with the first cities, and you have watched kings, citizens, and emperors try to solve the same hard problems of order and defense. After Constantine, the West slowly lost its grip. The empire was divided, Germanic peoples moved in, and the last Western emperor was removed in AD 476. The East lived on for a thousand years. What Rome left behind, its law, its roads, and its Christian faith, would shape everything that followed.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 36.2</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">The old Roman world had become a new one. A faith that Rome once hunted now had the emperor's favor. In the West, the Roman Empire would soon break apart, but the story of the ancient world did not simply end. Its laws, its language, and its faith would carry on into whatever came next.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 36.2 &middot; Constantine and the Christian Empire</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
