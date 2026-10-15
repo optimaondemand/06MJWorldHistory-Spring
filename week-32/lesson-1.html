@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>World History | Lesson 32.1</title>
+
+<style>
+    body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
+    .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
+    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
+    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
+    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+    .widget-reset:hover { background: #FDF3E3; }
+    .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
+    .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
+    .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
+    .gloss-tip .gloss-pron { color: #55C8E8; display: block; margin-bottom: 4px; font-style: italic; }
+    .gloss-audio { display: inline-flex; align-items: center; justify-content: center; border: none; background: none; cursor: pointer; font-size: 12px; padding: 0 0 0 2px; vertical-align: middle; color: #1B6A94; }
+    .gloss-audio:hover { color: #0E1C42; }
+    .glossary-box, .map-card, .figure-card, .people-card, .city-card, .tech-card, .battle-card { background: #FFFFFF; border: 1px solid #D0D9E8; border-left: 5px solid #C7922C; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+    .glossary-box ul { margin: 8px 0 0 0; padding-left: 20px; }
+    .glossary-box li { margin-bottom: 8px; font-size: 15px; color: #1a2340; line-height: 1.5; }
+    .map-card img, .figure-card img, .people-card img, .city-card img, .tech-card img, .battle-card img { max-width: 100%; height: auto; border-radius: 6px; display: block; margin: 10px 0; }
+    .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
+    .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
+</style>
+</head>
+<body>
+<div class="canvas-frame">
+
+<div style="background: #0E1C42; border-bottom: 5px solid #55C8E8; padding: 22px 34px;">
+    <div style="display: flex; align-items: center; gap: 14px; margin-bottom: 10px;">
+        <div style="width: 52px; height: 52px; border-radius: 50%; background: #FFFFFF; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><img src="https://raw.githubusercontent.com/optimaondemand/optima-assets/eeb0b335630058906d52f478028361d352253a93/images/Optima%20Final%20Circle%20-%20Owl%20Only.png" alt="Optima Academy" style="width: 50px; height: 40px; object-fit: contain;" /></div>
+        <div>
+            <div style="font-size: 28px; color: #ffffff; line-height: 1.2;">Optima Academy Online</div>
+            <div style="font-size: 12px; color: #55c8e8;">An Education Experience Company</div>
+        </div>
+    </div>
+    <div style="font-size: 36px; color: #ffffff; margin-bottom: 6px;">WORLD HISTORY</div>
+</div>
+
+<div style="background: #FFFFFF; border-bottom: 2px solid #D0D9E8; display: flex; flex-wrap: wrap;">
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Quarter / Module</div>
+        <div style="font-size: 17px; color: #0e1c42;">Quarter 4 &middot; Module 32</div>
+        <div style="font-size: 12px; color: #666;">Strongmen: Spartacus, Pompey, and Caesar in Gaul</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px; border-right: 1px solid #D0D9E8;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Lesson</div>
+        <div style="font-size: 17px; color: #0e1c42;">Lesson 32.1 &middot; Monday</div>
+    </div>
+    <div style="flex: 1; min-width: 140px; padding: 12px 16px;">
+        <div style="font-size: 11px; color: #6b7a99; margin-bottom: 4px;">Topic</div>
+        <div style="font-size: 17px; color: #0e1c42; font-style: italic;">Spartacus, Pompey, and the First Triumvirate</div>
+    </div>
+</div>
+
+<div style="padding: 24px 34px;">
+
+<!-- ═══════════════════════════════════════════════════════════════════════
+     OPTIMA READ-ALOUD PLAYER : drop-in snippet for GitHub-hosted lesson pages
+     ═══════════════════════════════════════════════════════════════════════
+
+     WHAT IT DOES
+       Adds a "Listen" player that reads the page aloud using the browser's
+       built-in Web Speech API (no accounts, no API keys, works offline once
+       the page is loaded). The paragraph currently being read is highlighted
+       in pale gold and scrolled into view. Works inside a Canvas iframe.
+
+     WHERE TO PASTE
+       Into any GitHub-hosted Optima lesson page (the full-HTML-document kind,
+       NOT Canvas RCE pages : the RCE strips <script>). Paste this whole block
+       just inside the body wrapper, right BEFORE the first content card.
+
+     OPTIONS
+       • Add  data-ra-skip  to any element the reader should NOT read
+         (e.g. the local preview banner, decorative text, answer keys).
+       • Add  data-readaloud-root  to one container to limit reading to it.
+         Default scope: the .canvas-frame wrapper, else <body>.
+
+     NOTES
+       • The player never reads itself, <button> labels, or hidden elements
+         (so unrevealed widget feedback stays unread until shown).
+       • If the browser has no speech voices, the player disables itself
+         with a friendly message instead of breaking the page.
+-->
+<div id="optima-read-aloud">
+<style>
+    #optima-read-aloud { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 14px 18px; margin: 0 0 20px 0; }
+    #optima-read-aloud .ora-kicker { font-size: 11px; color: #1B6A94; letter-spacing: 0.4px; margin-bottom: 10px; }
+    #optima-read-aloud .ora-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 10px; }
+    #optima-read-aloud .ora-controls button { border-radius: 8px; padding: 8px 16px; font-size: 14px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    #ora-play { background: #0E1C42; color: #FFFFFF; border: 1.5px solid #0E1C42; }
+    #ora-play:hover:enabled { background: #1B2D5E; }
+    #ora-play:disabled { background: #D0D9E8; border-color: #D0D9E8; color: #6b7a99; cursor: default; }
+    #ora-stop { background: #FFFFFF; color: #0E1C42; border: 1.5px solid #D0D9E8; }
+    #ora-stop:hover:enabled { background: #F4F6FA; border-color: #55C8E8; }
+    #ora-stop:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+    #optima-read-aloud .ora-speed { font-size: 12px; color: #6b7a99; display: flex; align-items: center; gap: 6px; }
+    #ora-rate { font-family: inherit; font-size: 13px; color: #0E1C42; border: 1.5px solid #D0D9E8; border-radius: 6px; padding: 5px 8px; background: #FFFFFF; }
+    #ora-status { font-size: 12px; color: #666; }
+    .ora-highlight { background: #FDF3E3 !important; box-shadow: inset 4px 0 0 #C7922C; border-radius: 4px; transition: background 0.2s; }
+</style>
+    <div class="ora-kicker">&#128266; READ ALOUD: LISTEN TO THIS PAGE</div>
+    <div class="ora-controls">
+        <button id="ora-play" type="button" aria-label="Listen to this page">&#9654;&#65039; Listen</button>
+        <button id="ora-stop" type="button" aria-label="Stop reading" disabled>&#9632; Stop</button>
+        <label class="ora-speed">Speed
+            <select id="ora-rate" aria-label="Reading speed">
+                <option value="0.8">Slower</option>
+                <option value="1" selected>Normal</option>
+                <option value="1.25">Faster</option>
+            </select>
+        </label>
+        <span id="ora-status" role="status" aria-live="polite"></span>
+    </div>
+<script>
+(function () {
+    "use strict";
+    var playBtn  = document.getElementById("ora-play");
+    var stopBtn  = document.getElementById("ora-stop");
+    var rateSel  = document.getElementById("ora-rate");
+    var statusEl = document.getElementById("ora-status");
+
+    if (!("speechSynthesis" in window) || !("SpeechSynthesisUtterance" in window)) {
+        playBtn.disabled = true;
+        rateSel.disabled = true;
+        statusEl.textContent = "Read-aloud is not supported in this browser.";
+        return;
+    }
+
+    var LABEL_PLAY   = "▶️ Listen";
+    var LABEL_PAUSE  = "⏸️ Pause";
+    var LABEL_RESUME = "▶️ Resume";
+    var BLOCK_SEL = "p, li, h1, h2, h3, h4, h5, h6, blockquote, td, th, dt, dd, figcaption, div";
+    var SKIP_SEL  = "#optima-read-aloud, [data-ra-skip], button, script, style, select, noscript, iframe";
+
+    var queue = [];        // [{ el, text }] : one entry per sentence
+    var idx = 0;
+    var playing = false, paused = false, stopping = false;
+    var currentBlock = null;
+    var currentUtterance = null;  // held to dodge a Chrome garbage-collection bug
+
+    var voices = [];
+    function loadVoices() { voices = window.speechSynthesis.getVoices(); }
+    loadVoices();
+    if ("onvoiceschanged" in window.speechSynthesis) {
+        window.speechSynthesis.onvoiceschanged = loadVoices;
+    }
+    function pickVoice() {
+        if (!voices.length) loadVoices();
+        var en = voices.filter(function (v) { return /^en/i.test(v.lang); });
+        return en.filter(function (v) { return /natural/i.test(v.name); })[0]
+            || en.filter(function (v) { return /google us english/i.test(v.name); })[0]
+            || en.filter(function (v) { return v.default; })[0]
+            || en[0] || null;
+    }
+
+    function isVisible(el) {
+        return !!(el.offsetWidth || el.offsetHeight || el.getClientRects().length);
+    }
+
+    // Walk text nodes, attach each to its nearest block ancestor, split into sentences.
+    function collectQueue() {
+        var root = document.querySelector("[data-readaloud-root]")
+                || document.querySelector(".canvas-frame")
+                || document.body;
+        var walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, null, false);
+        var items = [];   // [{ el, text }] : one entry per block, in reading order
+        var node;
+        while ((node = walker.nextNode())) {
+            if (!/\S/.test(node.textContent)) continue;
+            var el = node.parentElement;
+            if (!el || el.closest(SKIP_SEL)) continue;
+            if (!isVisible(el)) continue;
+            var block = el.closest(BLOCK_SEL) || root;
+            var last = items[items.length - 1];
+            if (last && last.el === block) last.text += " " + node.textContent;
+            else items.push({ el: block, text: node.textContent });
+        }
+        var q = [];
+        items.forEach(function (item) {
+            var clean = item.text.replace(/\s+/g, " ").trim();
+            if (!clean) return;
+            var sentences = clean.match(/[^.!?]+[.!?]+[”"')\]]*\s*|[^.!?]+$/g) || [clean];
+            sentences.forEach(function (s) {
+                s = s.trim();
+                if (s) q.push({ el: item.el, text: s });
+            });
+        });
+        return q;
+    }
+
+    function highlight(el) {
+        if (el === currentBlock) return;
+        clearHighlight();
+        currentBlock = el;
+        if (el && el !== document.body) {
+            el.classList.add("ora-highlight");
+            try { el.scrollIntoView({ behavior: "smooth", block: "nearest" }); } catch (e) {}
+        }
+    }
+    function clearHighlight() {
+        if (currentBlock) currentBlock.classList.remove("ora-highlight");
+        currentBlock = null;
+    }
+
+    function speakNext() {
+        if (idx >= queue.length) { finish("Finished reading this page."); return; }
+        var item = queue[idx];
+        highlight(item.el);
+        var u = new SpeechSynthesisUtterance(item.text);
+        u.rate = parseFloat(rateSel.value) || 1;
+        var v = pickVoice();
+        if (v) u.voice = v;
+        u.onend = function () {
+            if (stopping) return;
+            idx++;
+            speakNext();
+        };
+        u.onerror = function (e) {
+            if (stopping || e.error === "canceled" || e.error === "interrupted") return;
+            idx++;
+            speakNext();
+        };
+        currentUtterance = u;
+        window.speechSynthesis.speak(u);
+        statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+    }
+
+    function finish(message) {
+        playing = false;
+        paused = false;
+        clearHighlight();
+        playBtn.textContent = LABEL_PLAY;
+        stopBtn.disabled = true;
+        statusEl.textContent = message || "";
+        currentUtterance = null;
+    }
+
+    playBtn.addEventListener("click", function () {
+        if (playing && !paused) {
+            window.speechSynthesis.pause();
+            paused = true;
+            playBtn.textContent = LABEL_RESUME;
+            statusEl.textContent = "Paused";
+            return;
+        }
+        if (playing && paused) {
+            window.speechSynthesis.resume();
+            paused = false;
+            playBtn.textContent = LABEL_PAUSE;
+            statusEl.textContent = "Reading… " + (idx + 1) + " / " + queue.length;
+            return;
+        }
+        queue = collectQueue();
+        if (!queue.length) { statusEl.textContent = "Nothing to read on this page."; return; }
+        idx = 0;
+        stopping = false;
+        playing = true;
+        paused = false;
+        window.speechSynthesis.cancel();
+        playBtn.textContent = LABEL_PAUSE;
+        stopBtn.disabled = false;
+        speakNext();
+    });
+
+    stopBtn.addEventListener("click", function () {
+        stopping = true;
+        window.speechSynthesis.cancel();
+        finish("");
+    });
+
+    // Changing speed mid-read restarts the current sentence at the new rate.
+    rateSel.addEventListener("change", function () {
+        if (!playing || paused) return;
+        stopping = true;
+        window.speechSynthesis.cancel();
+        setTimeout(function () { stopping = false; speakNext(); }, 60);
+    });
+
+    window.addEventListener("pagehide", function () { window.speechSynthesis.cancel(); });
+})();
+</script>
+</div>
+<!-- ═══ END OPTIMA READ-ALOUD PLAYER ═══ -->
+
+    <div style="background: #EEF1F8; border-left: 5px solid #0E1C42; border-radius: 7px; padding: 18px 22px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #0e1c42; margin-bottom: 6px;">Lesson 32.1</div>
+        <div style="font-size: 22px; color: #0e1c42; margin-bottom: 4px;">Spartacus, Pompey, and the First Triumvirate</div>
+        <div style="font-size: 16px; color: #666;">Lesson</div>
+        <div style="font-size: 13px; margin-top: 10px;">&#8592; Start here: this module's Check-In</div>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#128214; GLOSSARY OF SUBJECT VOCABULARY</div>
+        <div style="font-size: 14px; color: #1a2340;">There are some vocabulary words in this lesson worth reviewing. Tap or hover any highlighted word in the text for a quick reminder, or use the list below.</div>
+        <ul>
+            <li><span class="gloss" tabindex="0">conspiracy<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kun SPEER uh see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kun-SPEER-uh-see</span>A secret plan by a group of people to do something harmful or illegal.</span></span></li>
+            <li><span class="gloss" tabindex="0">gladiator<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GLAD ee ay ter')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GLAD-ee-ay-ter</span>A trained fighter, often a slave, who fought other men for public entertainment.</span></span></li>
+            <li><span class="gloss" tabindex="0">triumvirate<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'try UM vur it')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">try-UM-vur-it</span>A group of three men who share power.</span></span></li>
+            <li><span class="gloss" tabindex="0">veteran<button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'VET er un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">VET-er-un</span>A soldier who has served for many years and has left the army.</span></span></li>
+        </ul>
+    </div>
+
+    <div class="map-card">
+        <div class="callout-label">&#128506;&#65039; GEOGRAPHICAL GLOSSARY</div>
+        <div style="font-size: 14px; color: #444;"><strong>Capua</strong> (KAP-yoo-uh): the Italian city with the gladiator school where the revolt began. <strong>Mount Vesuvius</strong> (vuh-SOO-vee-us): the volcano where Spartacus's army made its camp. <strong>Rome</strong> (rohm): the capital, where politicians schemed. <strong>Syria</strong> (SEER-ee-uh) and <strong>Jerusalem</strong> (jeh-ROO-suh-lem): eastern lands that Pompey brought under Roman control.</div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128214; TODAY'S FOCUS</div>
+        <div style="font-size: 20px; color: #0e1c42; font-style: italic; margin-bottom: 10px;">What happens when three powerful men decide to share Rome in secret?</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Armies now followed generals, and the generals wanted more power. Today you will see a slave revolt shake Italy and three strongmen strike a private deal.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#127919; BY THE END OF THIS LESSON YOU WILL BE ABLE TO&hellip;</div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain how the Spartacus revolt began and how it ended.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">2</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> describe how Pompey won fame.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">3</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain what Cicero did when he learned of a plot against Rome.</div>
+        </div>
+        <div style="display: flex; align-items: flex-start; gap: 12px; margin-bottom: 12px;">
+            <div style="min-width: 26px; height: 26px; border-radius: 50%; background: #C7922C; color: #fff; font-size: 13px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">4</div>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.65;"><strong>I will be able to</strong> explain why the First Triumvirate threatened the Republic.</div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div class="callout-label">&#128203; WHAT YOU NEED FOR THIS LESSON</div>
+        <div style="display: flex; align-items: flex-start; gap: 10px; border-left: 3px solid #D0D9E8; padding-left: 14px;"><span style="color: #c7922c; font-size: 18px; flex-shrink: 0;">&#9654;</span>
+            <div style="font-size: 18px; color: #1a2340; line-height: 1.6;">This lesson page.</div>
+        </div>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The Slave Who Shook Italy</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">After Sulla, Rome was quiet for a while, but the old troubles remained. One of them was slavery. By the 70s BC, Italy held hundreds of thousands of slaves, many of them captured in Rome's wars. Some were trained to fight in shows for crowds, and they were called <span class="gloss" tabindex="0"><strong>gladiators</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GLAD ee ay ter')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GLAD-ee-ay-ter</span>A trained fighter, often a slave, who fought other men for public entertainment.</span></span>.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 73 BC, about seventy of them broke out of a gladiator school in the city of Capua. One was a Thracian named <span class="gloss" tabindex="0"><strong>Spartacus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SPAR tuh kus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPAR-tuh-kus</span>The gladiator from Thrace who led a great slave revolt.</span></span>. He had once been a soldier, and he was a gifted leader. The runaways made camp on the slopes of Mount Vesuvius. Slaves from farms and estates flocked to them, until the army grew to tens of thousands.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Rome was caught by surprise. It sent small forces, and Spartacus beat them. For two years, his army roamed through southern Italy. We do not know for certain what he wanted. One account says he hoped to lead his people out of Italy over the Alps and home. Other accounts say they wished to stay and plunder. Either way, Roman landowners were terrified.</p>
+    </div>
+
+    <div class="glossary-box">
+        <div class="callout-label">&#127963;&#65039; FOREIGN LANGUAGE VOCABULARY</div>
+        <ul>
+            <li><span class="gloss" tabindex="0"><strong>Spartacus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'SPAR tuh kus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">SPAR-tuh-kus</span>The gladiator from Thrace who led a great slave revolt.</span></span> (<em>Spartacus</em>), said SPAR-tuh-kus: The gladiator from Thrace who led a great slave revolt.</li>
+            <li><span class="gloss" tabindex="0"><strong>Crassus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MAR kus lih SIN ee us KRASS us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MAR-kus lih-SIN-ee-us KRASS-us</span>The richest man in Rome and the general who beat Spartacus.</span></span> (<em>Marcus Licinius Crassus</em>), said MAR-kus lih-SIN-ee-us KRASS-us: The richest man in Rome and the general who beat Spartacus.</li>
+            <li><span class="gloss" tabindex="0"><strong>Pompey</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NEE us pom PAY us MAG nus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NEE-us pom-PAY-us MAG-nus</span>The popular Roman general who won wars in the East.</span></span> (<em>Gnaeus Pompeius Magnus</em>), said NEE-us pom-PAY-us MAG-nus: The popular Roman general who won wars in the East.</li>
+            <li><span class="gloss" tabindex="0"><strong>Cicero</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MAR kus TUL ee us SIS er oh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MAR-kus TUL-ee-us SIS-er-oh</span>Rome's greatest speaker, who was consul in 63 BC.</span></span> (<em>Marcus Tullius Cicero</em>), said MAR-kus TUL-ee-us SIS-er-oh: Rome's greatest speaker, who was consul in 63 BC.</li>
+            <li><span class="gloss" tabindex="0"><strong>Catiline</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LOO shus SER jee us kat ih LY nuh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LOO-shus SER-jee-us kat-ih-LY-nuh</span>The noble who plotted to seize Rome by force.</span></span> (<em>Lucius Sergius Catilina</em>), said LOO-shus SER-jee-us kat-ih-LY-nuh: The noble who plotted to seize Rome by force.</li>
+            <li><span class="gloss" tabindex="0"><strong>Julius Caesar</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GY us JOOL yus SEE zer')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GY-us JOOL-yus SEE-zer</span>The ambitious Roman politician and general who later conquered Gaul.</span></span> (<em>Gaius Julius Caesar</em>), said GY-us JOOL-yus SEE-zer: The ambitious Roman politician and general who later conquered Gaul.</li>
+        </ul>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>The End of the Revolt</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 71 BC, the Senate gave command to <span class="gloss" tabindex="0"><strong>Crassus</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MAR kus lih SIN ee us KRASS us')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MAR-kus lih-SIN-ee-us KRASS-us</span>The richest man in Rome and the general who beat Spartacus.</span></span> (<em>Marcus Licinius Crassus</em>), who was said to be the richest man in Rome. He had earned his money in real estate and by buying up property cheaply, and he had fought for Sulla. Crassus took eight legions. He trapped the rebels in the toe of Italy, and in a final battle Spartacus was killed. About six thousand captured slaves were nailed to crosses along the road from Capua to Rome. Many Romans must have seen those crosses, and they were meant as a warning.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">The revolt was over, but Rome's problem was not. Slaves did the work on the great estates, and their owners lived in fear of them. Cruelty made the fear greater, and no one in the Senate could see a way to end it. A system built on slavery had shown how fragile it was.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Pompey, the Man of the Hour</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Another general claimed credit for finishing off some of the runaways. He was <span class="gloss" tabindex="0"><strong>Pompey</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'NEE us pom PAY us MAG nus')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">NEE-us pom-PAY-us MAG-nus</span>The popular Roman general who won wars in the East.</span></span> (<em>Gnaeus Pompeius Magnus</em>). Pompey had raised his own army as a young man and fought for Sulla. He won so many victories that he was called "the Great." He was elected consul in 70 BC, even though he was too young and had never held the lower offices. The Romans were willing to bend the rules for him.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 67 BC, pirates had grown so strong that they cut off Rome's grain ships. The people gave Pompey a special command over the entire Mediterranean. In about three months, he swept the pirates from the sea. Next, he was sent to the east to fight King Mithridates. Pompey defeated him, took Syria, and in 63 BC marched into Jerusalem. By the time he came home, he had added great lands to Rome and stood higher than any other Roman. The Senate began to fear him. A man who could clear the sea and conquer kingdoms might not be willing to go back to being an ordinary citizen. The old rule was that a general gave up his command and his army when a war ended. Pompey, like Sulla before him, made many Romans wonder whether that rule still held.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Cicero and the Plot</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Not everyone in Rome relied on a sword. <span class="gloss" tabindex="0"><strong>Cicero</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'MAR kus TUL ee us SIS er oh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">MAR-kus TUL-ee-us SIS-er-oh</span>Rome's greatest speaker, who was consul in 63 BC.</span></span> (<em>Marcus Tullius Cicero</em>) was a lawyer from a small Italian town, and like Marius, he was a new man. His speeches were so powerful that voters made him consul in 63 BC.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">That year, a nobleman named <span class="gloss" tabindex="0"><strong>Catiline</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LOO shus SER jee us kat ih LY nuh')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LOO-shus SER-jee-us kat-ih-LY-nuh</span>The noble who plotted to seize Rome by force.</span></span> (<em>Lucius Sergius Catilina</em>) was deeply in debt and angry that he had lost the election. He joined a <span class="gloss" tabindex="0"><strong>conspiracy</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'kun SPEER uh see')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">kun-SPEER-uh-see</span>A secret plan by a group of people to do something harmful or illegal.</span></span> to seize Rome. Cicero learned of the plot and gave speeches in the Senate to expose it. The leaders were arrested, and the Senate had them put to death without a trial. Cicero was hailed as the savior of the Republic. But some Romans said he had broken the law by executing citizens without a trial. A few years later, his enemies drove him into exile for it. The episode shows how easily Romans now set the rules aside when they felt afraid.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Three Men Make a Deal</strong></div>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">When Pompey came home, the Senate would not give his <span class="gloss" tabindex="0"><strong>veterans</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'VET er un')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">VET-er-un</span>A soldier who has served for many years and has left the army.</span></span> the land they had been promised. Another rising politician, <span class="gloss" tabindex="0"><strong>Julius Caesar</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'GY us JOOL yus SEE zer')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">GY-us JOOL-yus SEE-zer</span>The ambitious Roman politician and general who later conquered Gaul.</span></span> (<em>Gaius Julius Caesar</em>), also found the Senate in his way. He came from an old but not very rich family, and he was clever, charming, and deeply in debt. Crassus wanted help for his friends too.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">In 60 BC, the three made a private pact. They agreed to support one another, and together they could win any office or law they wanted. We call this the First <span class="gloss" tabindex="0"><strong>triumvirate</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'try UM vur it')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">try-UM-vur-it</span>A group of three men who share power.</span></span>, though it was never an official office. It was only a secret deal. Caesar was elected consul in 59 BC, and he passed the laws the other two wanted. Pompey married Caesar's daughter Julia, which tied them together.</p>
+        <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">This arrangement mattered because the Senate had been bypassed. The Republic's offices still existed, but real decisions were now made by three men in private. Each one needed the other two, and none of them could be sure the pact would last.</p>
+    </div>
+
+    <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 16px;">&#10145;&#65039; WHAT YOU'LL DO NEXT</div>
+        <div style="display: flex; align-items: flex-start; gap: 14px; margin-bottom: 16px;">
+            <div style="min-width: 34px; height: 34px; border-radius: 50%; background: #0E1C42; color: #fff; font-size: 16px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;">1</div>
+            <div>
+                <div style="font-size: 18px; color: #0e1c42; margin-bottom: 4px;"><strong>Reading Quiz 32.1</strong></div>
+                <div style="font-size: 16px; color: #1a2340; line-height: 1.55;">A short quiz on today's lesson, in Canvas.</div>
+            </div>
+        </div>
+    </div>
+    <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
+        <div style="font-size: 11px; color: #c7922c; margin-bottom: 12px;">&#128170; KEEP THIS IN MIND</div>
+        <p style="font-size: 18px; color: #1a2340; line-height: 1.65; margin: 0;">Spartacus showed how cruel and fragile the slave economy was. Pompey, Crassus, and Caesar showed how a few men could outweigh the Senate. Each man needed the others for now, but none of them would stay content to share for long.</p>
+    </div>
+
+</div>
+
+<div style="background: #0E1C42; border-top: 3px solid #55C8E8; padding: 18px 34px; text-align: center;">
+    <div style="font-size: 18px; color: #ffffff; margin-bottom: 6px;"><span style="color: #55c8e8;">Optima Academy Online</span> &middot; WORLD HISTORY &middot; Quarter 4 &middot; Student Lesson Page</div>
+    <div style="font-size: 13px; color: rgba(255,255,255,0.65); margin-bottom: 4px;">Lesson 32.1 &middot; Spartacus, Pompey, and the First Triumvirate</div>
+    <div style="font-size: 12px; color: rgba(255,255,255,0.4);">&copy; Optima Academy Online &middot; An Education Experience Company</div>
+</div>
+
+</div>
+
+
+<script>
+function speakGloss(e, text) {
+  e.stopPropagation();
+  if ('speechSynthesis' in window) {
+    window.speechSynthesis.cancel();
+    var u = new SpeechSynthesisUtterance(text);
+    u.rate = 0.85;
+    window.speechSynthesis.speak(u);
+  }
+}
+(function () {
+  document.addEventListener('click', function (e) {
+    var reset = e.target.closest('.widget-reset');
+    if (reset) {
+      var w = reset.closest('.optima-widget');
+      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
+      return;
+    }
+    var sBtn = e.target.closest('.widget-row .widget-options button');
+    if (sBtn) {
+      var row = sBtn.closest('.widget-row');
+      var correct = row.dataset.correct;
+      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
+      var right = sBtn.dataset.choice === correct;
+      sBtn.classList.add(right ? 'correct' : 'incorrect');
+      var text = right ? row.dataset.right : row.dataset.wrong;
+      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
+      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
+      rf.textContent = text;
+      return;
+    }
+    var gloss = e.target.closest('.gloss');
+    if (gloss && !e.target.closest('.gloss-audio')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
+      gloss.classList.toggle('gloss-open');
+    } else if (!e.target.closest('.gloss-tip')) {
+      document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { g.classList.remove('gloss-open'); });
+    }
+  });
+})();
+</script>
+
+</body>
+</html>
