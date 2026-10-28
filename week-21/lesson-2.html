@@ -8,22 +8,6 @@
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
     .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
     .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
     .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
@@ -37,6 +21,7 @@
     .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
     .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
 </style>
+<link rel="stylesheet" href="../shared/widgets.css" />
 </head>
 <body>
 <div class="canvas-frame">
@@ -380,6 +365,18 @@
         </ul>
     </div>
 
+    <div class="optima-widget ow-decide">
+        <div class="widget-kicker">&#127919; TRY IT: The Tied Vote</div>
+        <div class="widget-question">You are Callimachus, the war leader of Athens. The ten generals are tied, and your vote decides. The Persians are camped on the plain. What do you do?</div>
+        <div class="widget-options">
+            <button data-result="A reasonable worry: the Persians had burned Eretria. But the lesson notes that if Athens waited, the Persians might have found friends inside the city who wanted to let Hippias return.">Vote to wait inside the walls</button>
+            <button data-result="This is the choice Miltiades urged. He had once served in the Persian empire and knew how Persians fought.">Vote to march out and fight</button>
+        </div>
+        <div class="widget-feedback"></div>
+        <div class="ow-after ow-reveal-body" style="display:none">What happened: Callimachus voted to fight. We cannot say how things would have gone the other way, but you can see how close the choice was.</div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
     <div class="battle-card">
         <div class="callout-label">&#9876;&#65039; BATTLE SPOTLIGHT &middot; Marathon, 490 BC</div>
         <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">Marathon is a flat coastal plain, a little over a mile wide, with marshes at one end and mountains behind it. The Greeks camped at the foot of the hills, where Persian horsemen could not easily reach them. The Persians kept their ships on the beach at their backs. Our main source is Herodotus, who wrote about forty years after the battle. He gives the numbers of the dead on each side, but no map survives, and historians disagree about exactly where the two armies stood. A mound near the plain is traditionally said to cover the Athenian dead. Whatever the exact details, the Greeks had chosen their ground well, and they struck before the Persians were ready.</p>
@@ -393,12 +390,42 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Why did the Greek charge work? Think about what you learned about the phalanx. Hoplites wore heavy armor and carried long spears. Persian soldiers wore lighter gear and carried shorter spears and bows. In close fighting, the heavier Greeks had a big advantage. The Greeks had also trained to fight shoulder to shoulder. Each man trusted the man beside him. That trust is what held the line.</p>
     </div>
 
+    <div class="optima-widget ow-step" data-frame="0">
+        <div class="widget-kicker">&#127919; TRY IT: The Charge at Marathon</div>
+        <div class="widget-question">Step through the battle. This is a simple picture of what the lesson says, not a map of where each unit stood.</div>
+        <div class="ow-frame on"><div class="ow-stage"><div class="wd-row"><span class="wd-box red">Persian army</span></div><div class="wd-row"><span class="wd-box">Greek side (thick)</span><span class="wd-box thin">Greek center (thin)</span><span class="wd-box">Greek side (thick)</span></div><div class="wd-label">Greek phalanx</div></div><div class="ow-caption">The Greeks formed a phalanx. They built it with a thin middle and thick sides.</div></div>
+        <div class="ow-frame"><div class="ow-stage"><div class="wd-row"><span class="wd-box red">Persian army (archers)</span></div><div class="wd-row"><span class="wd-arrow">&uarr;</span><span class="wd-arrow">&uarr;</span><span class="wd-arrow">&uarr;</span></div><div class="wd-row"><span class="wd-box">Greek side</span><span class="wd-box thin">Greek center</span><span class="wd-box">Greek side</span></div></div><div class="ow-caption">The Greeks advanced fast, so the Persian archers could not do much damage.</div></div>
+        <div class="ow-frame"><div class="ow-stage"><div class="wd-row"><span class="wd-box red">Persian center pushes forward</span></div><div class="wd-row"><span class="wd-arrow">&darr;</span></div><div class="wd-row"><span class="wd-box">Greek side</span><span class="wd-box thin">Greek center</span><span class="wd-box">Greek side</span></div></div><div class="ow-caption">The Persians pushed hard at the Greek middle and got through.</div></div>
+        <div class="ow-frame"><div class="ow-stage"><div class="wd-row"><span class="wd-box">Greek side</span><span class="wd-arrow">&rarr;</span><span class="wd-box red">Persian center, surrounded</span><span class="wd-arrow">&larr;</span><span class="wd-box">Greek side</span></div></div><div class="ow-caption">The thick sides wrapped around the Persian center. The Persians broke, and many ran back to their ships.</div></div>
+        <div class="ow-nav"><button class="ow-back" disabled>&larr; Back</button><button class="ow-next">Next &rarr;</button><span class="ow-step-count">Step 1 of 4</span></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
         <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>A Legend and a Legacy</strong></div>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">You may have heard that a runner ran from Marathon to Athens to announce the victory, and then died. That is a <span class="gloss" tabindex="0"><strong>legend</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'LEJ und')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">LEJ-und</span>A story handed down from the past that may not be fully true.</span></span>, told in later centuries. Herodotus never mentions it, and he tells us instead about the run of Pheidippides to Sparta. Our modern marathon race remembers the legend, not a documented event.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">It is worth asking why such stories last. People like a simple, vivid picture, and a runner collapsing after bringing good news is easy to remember. Careful historians still tell the legend, but they mark it as a legend.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">What is certain is that Marathon changed Athens. Its hoplites, the farmers and craftsmen of the middle class, had stood against the great king and won. They gained a deep pride in their city and in themselves. They believed that free men fighting for their own land could face an empire. Darius died in 486 BC, still hoping to punish Athens. His son would come with a much larger army, and Athens would need all that confidence.</p>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Notice, too, who won this battle. These were not nobles fighting for their own glory. They were farmers and craftsmen fighting for their own homes. This is the same middle class that Solon had helped and Cleisthenes had brought into the Assembly. In a way, Athens had trained itself for this day.</p>
+    </div>
+
+    <div class="optima-widget ow-sort" data-done="All sorted. Careful historians tell a legend but mark it as a legend.">
+        <div class="widget-kicker">&#127919; TRY IT: Record or Legend?</div>
+        <div class="widget-question">Tap an item, then tap where the story comes from.</div>
+        <div class="ow-pool">
+            <button class="ow-chip" data-i="0" data-bin="1" data-why="Yes. The lesson says this is traditionally said, so it is tradition." data-hint="The lesson says this mound is traditionally said to cover the dead.">A mound near the plain is said to cover the Athenian dead.</button>
+            <button class="ow-chip" data-i="1" data-bin="1" data-why="Yes. This is a legend told in later centuries. Herodotus never mentions it." data-hint="Does the lesson say Herodotus mentions this run?">A runner ran from Marathon to Athens, announced the victory, and died.</button>
+            <button class="ow-chip" data-i="2" data-bin="0" data-why="Yes. Herodotus tells us about this run." data-hint="Herodotus told about a run, but to which city?">Pheidippides ran to Sparta to ask for help.</button>
+            <button class="ow-chip" data-i="3" data-bin="1" data-why="Yes. The race remembers a legend, not a documented event." data-hint="The race remembers a story that Herodotus never told.">Our modern marathon race remembers the runner who died.</button>
+            <button class="ow-chip" data-i="4" data-bin="0" data-why="Yes. The number comes from Herodotus." data-hint="The lesson names its source for this number.">Herodotus says that 192 Athenians died.</button>
+            <button class="ow-chip" data-i="5" data-bin="0" data-why="Yes. The lesson says this is according to Herodotus." data-hint="Look for a story the lesson attributes to Herodotus.">Callimachus voted for battle after Miltiades urged him.</button>
+        </div>
+        <div class="ow-bins">
+            <div class="ow-bin" data-bin="0"><button class="ow-bin-btn">From Herodotus</button><ul class="ow-bin-items"></ul></div>
+            <div class="ow-bin" data-bin="1"><button class="ow-bin-btn">From legend or tradition</button><ul class="ow-bin-items"></ul></div>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #0E1C42; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -439,26 +466,6 @@ function speakGloss(e, text) {
 }
 (function () {
   document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      return;
-    }
-    var sBtn = e.target.closest('.widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? row.dataset.right : row.dataset.wrong;
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
     var gloss = e.target.closest('.gloss');
     if (gloss && !e.target.closest('.gloss-audio')) {
       document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
@@ -470,5 +477,6 @@ function speakGloss(e, text) {
 })();
 </script>
 
+<script src="../shared/widgets.js" defer></script>
 </body>
 </html>

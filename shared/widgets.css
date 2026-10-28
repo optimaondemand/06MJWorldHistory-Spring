@@ -1,0 +1,66 @@
+/* Optima lesson widgets: shared styles. Linked from every lesson page. */
+.optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
+.widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
+.widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
+.widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
+.widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
+.widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
+.widget-options button, .ow-chip, .ow-bin-btn, .ow-nav button, .ow-part { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; line-height: 1.4; }
+.widget-options button:hover, .ow-chip:hover, .ow-bin-btn:hover, .ow-nav button:hover:enabled, .ow-part:hover { background: #F4F6FA; border-color: #55C8E8; }
+.widget-options button.selected, .ow-chip.selected, .ow-part.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
+.widget-options button.correct, .ow-part.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
+.widget-options button.incorrect, .ow-part.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
+.widget-feedback { background: #FFFFFF; border-left: 3px solid #C7922C; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 10px 0; display: none; border-radius: 4px; }
+.widget-feedback.show { display: block; }
+.widget-feedback.correct { background: #D8F0DD; border-left-color: #2A9D5C; color: #1A6B3D; }
+.widget-feedback.incorrect { background: #FDECEC; border-left-color: #C0392B; color: #8A1F16; }
+.row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
+.row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
+.row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
+.widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
+.widget-reset:hover { background: #FDF3E3; }
+/* scale skin */
+.ow-scale .widget-options { justify-content: space-between; }
+.ow-scale .widget-options button { flex: 1; text-align: center; min-width: 90px; }
+/* flip cards */
+.ow-flip { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 8px; padding: 16px 18px; cursor: pointer; text-align: center; margin-bottom: 10px; font-size: 16px; color: #0E1C42; line-height: 1.55; }
+.ow-flip:hover { border-color: #55C8E8; }
+.ow-flip .ow-flip-back { display: none; color: #1a2340; font-size: 15px; }
+.ow-flip.flipped .ow-flip-front { display: none; }
+.ow-flip.flipped .ow-flip-back { display: block; }
+/* reveal */
+.ow-reveal { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 8px; }
+.ow-reveal summary { cursor: pointer; font-size: 15px; color: #0E1C42; line-height: 1.5; }
+.ow-reveal-body { margin-top: 10px; padding: 10px 14px; border-left: 3px solid #C7922C; background: #FDF9F0; font-size: 15px; color: #1a2340; line-height: 1.55; border-radius: 4px; }
+/* order and sort */
+.ow-pool { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.ow-chip.placed { display: none; }
+.ow-line { margin: 0 0 10px 0; padding: 0 0 0 24px; font-size: 15px; color: #0E1C42; line-height: 1.55; }
+.ow-line li { margin-bottom: 4px; }
+.ow-line:empty { display: none; }
+.ow-bins { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 8px; }
+.ow-bin { flex: 1; min-width: 180px; background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 10px 12px; }
+.ow-bin-btn { width: 100%; font-weight: 600; background: #F4F6FA; }
+.ow-bin-items { list-style: none; margin: 8px 0 0 0; padding: 0; font-size: 14px; color: #1A6B3D; line-height: 1.45; }
+.ow-bin-items li { background: #D8F0DD; border-left: 3px solid #2A9D5C; border-radius: 4px; padding: 5px 9px; margin-bottom: 5px; }
+/* step */
+.ow-frame { display: none; }
+.ow-frame.on { display: block; }
+.ow-stage { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 14px; margin-bottom: 8px; }
+.ow-caption { font-size: 15px; color: #1a2340; line-height: 1.55; margin-bottom: 10px; }
+.ow-nav { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin-bottom: 4px; }
+.ow-nav button:disabled { color: #999; border-color: #E4E9F2; cursor: default; }
+.ow-step-count { font-size: 13px; color: #6b7a99; }
+/* diagram parts (used inside step frames and hot diagrams) */
+.wd-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 6px; margin: 6px 0; }
+.wd-box { border: 2px solid #2196D0; background: #E8F6FB; color: #0E1C42; border-radius: 6px; padding: 6px 10px; font-size: 13px; text-align: center; line-height: 1.3; }
+.wd-box.gold { border-color: #C7922C; background: #FDF3E3; }
+.wd-box.navy { border-color: #0E1C42; background: #0E1C42; color: #FFFFFF; }
+.wd-box.red { border-color: #C0392B; background: #FDECEC; color: #8A1F16; }
+.wd-box.thin { opacity: 0.75; border-style: dashed; }
+.wd-arrow { color: #1B6A94; font-size: 20px; line-height: 1; }
+.wd-label { font-size: 12px; color: #6b7a99; text-align: center; margin: 2px 0; }
+/* hot */
+.ow-hot-diagram { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 14px; margin-bottom: 8px; display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; }
+.ow-hot-info { background: #FFFFFF; border-left: 3px solid #2196D0; border-radius: 4px; padding: 10px 14px; font-size: 15px; color: #1a2340; line-height: 1.55; margin: 8px 0; min-height: 22px; }
+.ow-hot-task { font-size: 15px; color: #0E1C42; margin-bottom: 8px; font-style: italic; }

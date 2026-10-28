@@ -8,22 +8,6 @@
 <style>
     body { margin: 0; padding: 0; font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif; background: #f4f6fa; }
     .canvas-frame { max-width: 1100px; margin: 0 auto; background: #ffffff; box-shadow: 0 2px 8px rgba(0,0,0,0.08); }
-    .optima-widget { background: linear-gradient(135deg, #E8F6FB 0%, #F4F9FC 100%); border: 1px solid #C5DCE5; border-left: 5px solid #2196D0; border-radius: 8px; padding: 18px 22px; margin: 18px 0; }
-    .widget-kicker { font-size: 11px; color: #1B6A94; margin-bottom: 10px; letter-spacing: 0.4px; }
-    .widget-question { font-size: 17px; color: #0E1C42; margin-bottom: 14px; line-height: 1.55; }
-    .widget-row { background: #FFFFFF; border: 1px solid #D0D9E8; border-radius: 6px; padding: 12px 14px; margin-bottom: 10px; }
-    .widget-row-prompt { font-size: 15px; color: #0E1C42; margin-bottom: 8px; line-height: 1.5; font-style: italic; }
-    .widget-options { display: flex; flex-wrap: wrap; gap: 8px; }
-    .widget-options button { background: #FFFFFF; border: 1.5px solid #D0D9E8; border-radius: 8px; padding: 8px 14px; font-size: 14px; color: #0E1C42; cursor: pointer; transition: all 0.15s; font-family: inherit; }
-    .widget-options button:hover { background: #F4F6FA; border-color: #55C8E8; }
-    .widget-options button.selected { background: #0E1C42; color: #FFFFFF; border-color: #0E1C42; }
-    .widget-options button.correct { background: #D8F0DD; border-color: #2A9D5C; color: #1A6B3D; }
-    .widget-options button.incorrect { background: #FDECEC; border-color: #C0392B; color: #8A1F16; }
-    .row-feedback { padding: 8px 12px; margin-top: 8px; font-size: 14px; border-radius: 4px; line-height: 1.5; }
-    .row-feedback.correct { background: #D8F0DD; border-left: 3px solid #2A9D5C; color: #1A6B3D; }
-    .row-feedback.incorrect { background: #FDECEC; border-left: 3px solid #C0392B; color: #8A1F16; }
-    .widget-reset { background: transparent; border: 1px solid #C7922C; color: #C7922C; border-radius: 6px; padding: 6px 12px; font-size: 12px; cursor: pointer; font-family: inherit; margin-top: 6px; }
-    .widget-reset:hover { background: #FDF3E3; }
     .gloss { position: relative; border-bottom: 1px dotted #2196D0; font-weight: 600; color: #0E1C42; cursor: help; }
     .gloss:hover .gloss-tip, .gloss:focus .gloss-tip, .gloss.gloss-open .gloss-tip { display: block; }
     .gloss-tip { display: none; position: absolute; left: 0; bottom: 100%; margin-bottom: 8px; width: 260px; max-width: 70vw; background: #0E1C42; color: #fff; font-weight: normal; font-size: 13px; line-height: 1.5; padding: 10px 12px; border-radius: 6px; box-shadow: 0 4px 14px rgba(0,0,0,0.25); z-index: 20; }
@@ -37,6 +21,7 @@
     .callout-label { font-size: 11px; color: #c7922c; letter-spacing: 0.4px; margin-bottom: 10px; }
     .img-credit { font-size: 11px; color: #8a94ab; margin-top: 4px; }
 </style>
+<link rel="stylesheet" href="../shared/widgets.css" />
 </head>
 <body>
 <div class="canvas-frame">
@@ -364,6 +349,25 @@
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">Yet the sea tied the Greeks together even as the mountains pulled them apart. A ship could cross the Aegean Sea faster than a farmer could cross a mountain range. Greeks became sailors and traders. Wherever they sailed, they carried their language, their gods, and their stories. Mountains divided the Greeks. The sea connected them.</p>
     </div>
 
+    <div class="optima-widget ow-sort" data-done="All six sorted. The same land that split Greece also gave it the sea.">
+        <div class="widget-kicker">&#127919; TRY IT: Mountains or Sea?</div>
+        <div class="widget-question">Tap an item, then tap the group it belongs to.</div>
+        <div class="ow-pool">
+            <button class="ow-chip" data-i="0" data-bin="1" data-why="Yes. The sea gave them a road to far places." data-hint="Who needed ships: people stuck in valleys, or people reaching other lands?">Greeks became sailors and traders.</button>
+            <button class="ow-chip" data-i="1" data-bin="0" data-why="Yes. Small valleys with steep passes between them kept communities apart." data-hint="Think about what a steep pass did to travel between valleys.">Each valley went its own way.</button>
+            <button class="ow-chip" data-i="2" data-bin="0" data-why="Yes. Broken land made one ruler for all of Greece very hard." data-hint="Ask what the land looked like: flat and open, or rough and broken?">No wide plain let a ruler march an army across the land.</button>
+            <button class="ow-chip" data-i="3" data-bin="0" data-why="Yes. Climbing a pass was slow and hard, so valleys stayed separate." data-hint="Is a mountain pass a road or a wall?">A traveler had to climb a steep pass to reach the next valley.</button>
+            <button class="ow-chip" data-i="4" data-bin="1" data-why="Yes. Ships carried these things wherever the Greeks sailed." data-hint="What carried the Greeks and their ideas to other lands?">Greek language, gods, and stories traveled to faraway places.</button>
+            <button class="ow-chip" data-i="5" data-bin="1" data-why="Yes. By ship, water was the faster road." data-hint="Compare speeds: ship on water, or farmer on rock?">A ship could cross the Aegean faster than a farmer could cross a mountain range.</button>
+        </div>
+        <div class="ow-bins">
+            <div class="ow-bin" data-bin="0"><button class="ow-bin-btn">Mountains divided the Greeks</button><ul class="ow-bin-items"></ul></div>
+            <div class="ow-bin" data-bin="1"><button class="ow-bin-btn">The sea connected the Greeks</button><ul class="ow-bin-items"></ul></div>
+        </div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
         <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>A City, Its Farms, and Its Gods</strong></div>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">These small, separate communities became the Greek city-state. The Greeks called it a <span class="gloss" tabindex="0"><strong>city-state</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'POH lis')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">POH-lis</span>A city, its farmland, its citizens, and its gods, joined as one community.</span></span> (<em>polis</em>). A polis was more than a town. It had a city center, the farmland around it, the people who belonged to it, and the gods the people worshipped. Many were tiny, with only a few thousand people. There were many hundreds of them.</p>
@@ -394,6 +398,40 @@
         <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">Olympia was not a city. It was a sacred place in the western Peloponnese, set aside for Zeus. Every four years, Greeks from many cities gathered here to compete. Visitors slept in tents and fields. The running track you see in the photo was a long strip of packed earth, and spectators watched from the grassy banks. A Greek from a faraway colony and a Greek from a mountain valley could stand side by side and cheer for the same runner. For a few days, the many cities of Greece felt like one people.</p>
     </div>
 
+    <div class="optima-widget ow-select">
+        <div class="widget-kicker">&#127919; TRY IT: Polis or Not?</div>
+        <div class="widget-question">The Greeks called their city-state a polis. Decide whether each place or idea was one.</div>
+        <div class="widget-row" data-correct="0" data-right="Yes. Sparta was a city, its farmland, its people, and its gods joined as one community." data-wrong="Sparta had a city center, farmland, citizens, and gods. That is what made a polis.">
+            <div class="widget-row-prompt">Sparta, with its farmland, citizens, and gods.</div>
+            <div class="widget-options">
+                <button data-choice="0">A polis</button>
+                <button data-choice="1">Not a polis</button>
+            </div>
+        </div>
+        <div class="widget-row" data-correct="1" data-right="Right. Olympia was not a city. It was a sacred place where Greeks from many cities met." data-wrong="The lesson says Olympia was not a city. Think of it as a meeting place for many cities.">
+            <div class="widget-row-prompt">Olympia, the sacred place set aside for Zeus.</div>
+            <div class="widget-options">
+                <button data-choice="0">A polis</button>
+                <button data-choice="1">Not a polis</button>
+            </div>
+        </div>
+        <div class="widget-row" data-correct="1" data-right="Right. The Greeks shared a language and gods, but not one government." data-wrong="A Greek said he was a citizen of Athens or Corinth, not of Greece. Each city had its own government.">
+            <div class="widget-row-prompt">All of Greece, as one country with one government.</div>
+            <div class="widget-options">
+                <button data-choice="0">A polis</button>
+                <button data-choice="1">Not a polis</button>
+            </div>
+        </div>
+        <div class="widget-row" data-correct="0" data-right="Yes. Athens was one of the many cities that guarded its own freedom." data-wrong="Athens was a city with its own land, citizens, and gods. That makes it a polis.">
+            <div class="widget-row-prompt">Athens, a city on the coast of Attica.</div>
+            <div class="widget-options">
+                <button data-choice="0">A polis</button>
+                <button data-choice="1">Not a polis</button>
+            </div>
+        </div>
+        <button class="widget-reset">Reset</button>
+    </div>
+
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
         <div style="font-size: 11px; color: #c7922c; margin-bottom: 14px;">&#128218; <strong>Hesiod and the Good Neighbor</strong></div>
         <p style="font-size: 17px; color: #1a2340; line-height: 1.65; margin: 0 0 10px 0;">But a city cannot survive if every man chases only his own glory. Neighbors must trust each other, and farmers must be treated fairly. A second idea grew up beside the first. The poet Hesiod was a farmer who lived around 700 BC. He had a bitter quarrel with his own brother over land, and he wrote a poem called <em>Works and Days</em> about the hard life of a small farmer. Hesiod praised <span class="gloss" tabindex="0"><strong>justice</strong><button class="gloss-audio" aria-label="Play pronunciation" onclick="speakGloss(event,'DEE kay')">&#128266;</button><span class="gloss-tip"><span class="gloss-pron">DEE-kay</span>Fairness; giving each person what is owed.</span></span> (<em>dike</em>). He believed that cities with fair judges and honest work would prosper, and that cities with crooked judges would suffer. Homer showed the brilliant hero. Hesiod showed the good neighbor. A strong polis needed both.</p>
@@ -409,6 +447,23 @@
     <div class="tech-card">
         <div class="callout-label">&#9876;&#65039; TECHNOLOGY SPOTLIGHT &middot; The Hoplite's Gear</div>
         <p style="font-size: 15px; color: #1a2340; line-height: 1.6; margin: 8px 0 0 0;">The full set of a hoplite's gear was called a panoply. It included a bronze helmet, a breastplate, bronze shin guards called greaves, a round shield about three feet across, a spear for thrusting, and a short sword as a backup. Bronze working was a skilled craft, so a full set was expensive. That is why only men with some wealth could buy one. The shield was the most important piece. It was held on the left arm by a central band and a grip near the rim. Because it covered part of the neighbor's side, a line of shields worked like a wall. A soldier alone in this armor was clumsy. A soldier in a line was dangerous. This is why a phalanx mattered more than any one hoplite.</p>
+    </div>
+
+    <div class="optima-widget ow-hot" data-task="0" data-tasks="[{&quot;ask&quot;:&quot;Tap the part that covered a piece of the next soldier as well as its owner.&quot;,&quot;part&quot;:3,&quot;right&quot;:&quot;Yes. A line of shields worked like a wall, which is why the phalanx mattered.&quot;,&quot;wrong&quot;:&quot;That part protects only its own soldier. Find the one the lesson says covered a neighbor.&quot;},{&quot;ask&quot;:&quot;Tap the part carried as a backup.&quot;,&quot;part&quot;:5,&quot;right&quot;:&quot;Right. The spear came first, and the short sword was the backup.&quot;,&quot;wrong&quot;:&quot;Not that one. Look for the weapon the lesson calls a backup.&quot;},{&quot;ask&quot;:&quot;Tap the part that covered the lower legs.&quot;,&quot;part&quot;:2,&quot;right&quot;:&quot;Right. Shin guards, made of bronze.&quot;,&quot;wrong&quot;:&quot;That part sits somewhere else on the body. Look for the legs.&quot;}]">
+        <div class="widget-kicker">&#127919; TRY IT: The Hoplite's Gear</div>
+        <div class="widget-question">A hoplite carried a full set of gear. Tap each part to read about it, and then answer the questions.</div>
+        <div class="ow-hot-task"></div>
+        <div class="ow-hot-diagram">
+            <button class="ow-part" data-part="0" data-info="A bronze helmet protected the head. Bronze working was a skilled craft, so it cost a great deal.">Bronze helmet</button>
+            <button class="ow-part" data-part="1" data-info="A bronze breastplate covered the chest.">Breastplate</button>
+            <button class="ow-part" data-part="2" data-info="Bronze shin guards covered the lower legs.">Shin guards</button>
+            <button class="ow-part" data-part="3" data-info="About three feet across, held on the left arm by a central band and a grip near the rim. It covered part of the neighbor on the left too.">Round shield</button>
+            <button class="ow-part" data-part="4" data-info="A long spear, used for thrusting.">Spear</button>
+            <button class="ow-part" data-part="5" data-info="A short sword, carried as a backup.">Short sword</button>
+        </div>
+        <div class="ow-hot-info">Tap a part to read about it.</div>
+        <div class="widget-feedback"></div>
+        <button class="widget-reset">Reset</button>
     </div>
 
     <div style="background: #FFFFFF; border-top: 3px solid #C7922C; border: 1px solid #D0D9E8; border-radius: 8px; padding: 20px 24px; margin-bottom: 20px;">
@@ -461,26 +516,6 @@ function speakGloss(e, text) {
 }
 (function () {
   document.addEventListener('click', function (e) {
-    var reset = e.target.closest('.widget-reset');
-    if (reset) {
-      var w = reset.closest('.optima-widget');
-      w.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      w.querySelectorAll('.row-feedback').forEach(function (f) { f.remove(); });
-      return;
-    }
-    var sBtn = e.target.closest('.widget-row .widget-options button');
-    if (sBtn) {
-      var row = sBtn.closest('.widget-row');
-      var correct = row.dataset.correct;
-      row.querySelectorAll('.widget-options button').forEach(function (b) { b.classList.remove('selected', 'correct', 'incorrect'); });
-      var right = sBtn.dataset.choice === correct;
-      sBtn.classList.add(right ? 'correct' : 'incorrect');
-      var text = right ? row.dataset.right : row.dataset.wrong;
-      var rf = row.querySelector('.row-feedback') || row.appendChild(document.createElement('div'));
-      rf.className = 'row-feedback ' + (right ? 'correct' : 'incorrect');
-      rf.textContent = text;
-      return;
-    }
     var gloss = e.target.closest('.gloss');
     if (gloss && !e.target.closest('.gloss-audio')) {
       document.querySelectorAll('.gloss.gloss-open').forEach(function (g) { if (g !== gloss) g.classList.remove('gloss-open'); });
@@ -492,5 +527,6 @@ function speakGloss(e, text) {
 })();
 </script>
 
+<script src="../shared/widgets.js" defer></script>
 </body>
 </html>
