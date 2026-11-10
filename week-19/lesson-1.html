@@ -1702,6 +1702,19 @@ $('#askForm').onsubmit = e => { e.preventDefault(); const q = $('#askIn').value.
 /* L1: all activities are the live course widgets (kit/mjwidgets.js); nothing lesson-specific yet */
 
 
+/* ---------- The Verdict (lesson) ---------- */
+function drawFirst() {
+  const v = store.get('guess'), tx = (store.get('guessText') || '').trim();
+  const f = $('#firstAns'); if (f) f.textContent = 'Your first guess: ' + (v == null ? 'none' : GUESS[v]) + (tx ? ` \u00b7 \u201c${tx}\u201d` : '');
+}
+drawFirst();
+(function () { const f = $('#firstAns'), st = f && f.closest('.step'); if (st) new MutationObserver(drawFirst).observe(st, { attributes: true, attributeFilter: ['class'] }); })();
+(function () { const t = $('#finalAns'); if (!t) return; t.value = store.get('finalAns') || ''; t.oninput = e => { store.set('finalAns', e.target.value); updateNb(); }; })();
+function nbExtra() {
+  const a = (store.get('finalAns') || '').trim() || 'No answer yet.';
+  return [['Your Answer Now', [["Why did Greece break into so many cities?", a]]]];
+}
+
 /* ---------- voice: off until the student turns it on ---------- */
 let voiceOn = !!store.get('voice');
 function setVoice(on) {
