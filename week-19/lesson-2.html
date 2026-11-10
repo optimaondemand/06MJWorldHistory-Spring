@@ -1028,7 +1028,7 @@ body.reading-open .asktab .at-n{display:none}
     </div>
 <div class="magnote" data-book="fig:c2_1"><img src="img/peregrin.jpg" alt=""><div><b>Mr. Peregrin</b><p>Look at who is speaking here. Plutarch wrote hundreds of years after Lycurgus would have lived, and even he says nobody agreed on the dates.</p></div></div>
 <div class="card gold spot" data-book="fig:c2_2"><div class="label">&#128100; FIGURE SPOTLIGHT &middot; Lycurgus</div><p>Lycurgus is the lawgiver the Spartans credited with building their way of life. We know about him mostly from Plutarch, who wrote his biography long after Lycurgus would have lived. Plutarch tells us that Lycurgus traveled to other lands, studied their laws, and returned to Sparta at a time of disorder. He is said to have brought back the rules of the Great Rhetra with the approval of the god Apollo. Even Plutarch admits that the story has many versions. Some scholars think Lycurgus was a real man whose deeds were later enlarged. Others think the Spartans invented him to give their customs a famous founder. No portrait of him survives, and any statue or painting is only an artist's idea. What matters for history is that Spartans believed in him.</p></div>
-<div data-book="plate:c2" class="optima-widget ow-select">
+<div data-book="plate:c2" class="optima-widget ow-select" data-enforce>
         <div class="widget-kicker">&#127919; TRY IT: Story or Fact?</div>
         <div class="widget-question">Decide whether each statement is a story that Plutarch tells or something we can say for certain.</div>
         <div class="widget-row" data-correct="0" data-right="Yes. Plutarch tells this long after the fact, and even he says the story has many versions." data-wrong="Plutarch tells this story, but he admits that nobody agreed on the details.">
@@ -1089,7 +1089,7 @@ body.reading-open .asktab .at-n{display:none}
         <button class="widget-reset">Reset</button>
     </div>
 <div class="magnote" data-book="fig:c5_1"><img src="img/peregrin.jpg" alt=""><div><b>Mr. Peregrin</b><p>This paragraph passes along what "later Greek writers say" and what "historians argue about." Notice which statements it gives as certain and which it reports.</p></div></div>
-<div data-book="plate:c5" class="optima-widget ow-sort" data-done="All sorted. Notice how few people had a voice.">
+<div data-book="plate:c5" class="optima-widget ow-sort" data-done="All sorted. Notice how few people had a voice." data-enforce>
         <div class="widget-kicker">&#127919; TRY IT: Three Groups in the Spartan Lands</div>
         <div class="widget-question">Tap an item, then tap the group it describes.</div>
         <div class="ow-pool">
@@ -2292,5 +2292,6 @@ $$('[data-mini]').forEach(miniLesson);
 go(store.get('step') || 0, false);
 bootReader();
 </script>
+<script src="../shared/enforce.js" data-widget-enforcer></script>
 </body>
 </html>
