@@ -1059,7 +1059,7 @@ body.reading-open .asktab .at-n{display:none}
         <button class="widget-reset">Reset</button>
     </div>
 <div class="magnote" data-book="fig:c4_2"><img src="img/peregrin.jpg" alt=""><div><b>Mr. Peregrin</b><p>List the groups the lesson names as citizens and as not citizens. Keep both lists in mind for the next paragraph.</p></div></div>
-<div data-book="plate:c4" class="optima-widget ow-select">
+<div data-book="plate:c4" class="optima-widget ow-select" data-enforce>
         <div class="widget-kicker">&#127919; TRY IT: Who Helped Rule?</div>
         <div class="widget-question">Cleisthenes built a system where citizens helped to rule. Decide who could take part and who was left out.</div>
         <div class="widget-row" data-correct="1" data-right="Right. Athenian women had no part in the vote or in holding office." data-wrong="Citizens were free men born in Athens, and no one else.">
@@ -2290,5 +2290,6 @@ $$('[data-mini]').forEach(miniLesson);
 go(store.get('step') || 0, false);
 bootReader();
 </script>
+<script src="../shared/enforce.js" data-widget-enforcer></script>
 </body>
 </html>

@@ -1027,7 +1027,7 @@ body.reading-open .asktab .at-n{display:none}
 <div class="card gold" id="guessBack" data-book="open:2"><div class="reveal"><div id="guessBackText"></div></div></div>
 <div class="magnote" data-book="fig:c3_2"><img src="img/peregrin.jpg" alt=""><div><b>Mr. Peregrin</b><p>Notice what Solon canceled, whom he freed, and what he forbade. The next paragraph tells what he would not do.</p></div></div>
 <div class="card gold spot" data-book="fig:c3_3"><div class="label">&#128100; FIGURE SPOTLIGHT &middot; Solon</div><p>Solon was an Athenian poet, traveler, and lawgiver who lived around 600 BC. Our best information comes from Aristotle and Plutarch, who wrote long after his death, and from fragments of Solon's own poems. He was born into a good family but was not wealthy, which may be why both rich and poor were willing to trust him. After his reforms, he left Athens for ten years so that no one could pressure him to change his laws. Solon believed that a city fell apart when the rich grew greedy and the poor grew desperate. He tried to keep both groups within one community by giving each something and denying each something. Later Greeks counted him among the Seven Wise Men. His story is a reminder that a single fair-minded person, at the right moment, can change what a city becomes.</p></div>
-<div data-book="plate:c3" class="optima-widget ow-select">
+<div data-book="plate:c3" class="optima-widget ow-select" data-enforce>
         <div class="widget-kicker">&#127919; TRY IT: Who Was Pleased?</div>
         <div class="widget-question">Solon gave neither side all it wanted. Decide how each person would feel about his choices.</div>
         <div class="widget-row" data-correct="1" data-right="Right. The rich were angry about the lost debts." data-wrong="Think about what happened to the money the farmers owed him.">
@@ -2256,5 +2256,6 @@ $$('[data-mini]').forEach(miniLesson);
 go(store.get('step') || 0, false);
 bootReader();
 </script>
+<script src="../shared/enforce.js" data-widget-enforcer></script>
 </body>
 </html>
